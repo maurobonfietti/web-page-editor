@@ -1,0 +1,88 @@
+/*Magenta #ec008c & #900f5c */
+
+.btn:focus, .btn-2, 
+ul.why li:before, 
+.progress .progress-bar, 
+.accordionMod .panel-heading .current, 
+#current:after, 
+.flat .plan li.plan-name, 
+.flat .plan.featured:hover li.plan-name, 
+#filters ul li a:hover h5, 
+#filters ul li a.active h5, 
+.cl-effect-21 a::before,
+.cl-effect-21 a::after,
+.cl-effect-21 .active a::before,
+.cl-effect-21 .active a::after,
+.post-date a.date i, .service-icon i  {
+    background: #ec008c;
+}
+
+.bg-color {
+    background: #ec008c;
+	color: #fff;
+}
+
+.subscribe-btn {
+	background: #ec008c;
+	cursor: pointer;
+}
+
+div.content-box.big div.content-box-info p, .content-box-info h4 {
+	color: #ffeaf7;
+}
+
+.about-wrap {
+    background: #ec008c no-repeat fixed center center;
+}
+
+
+.subscribe-btn:focus, .subscribe-btn:hover, 
+.ch-item .ch-info-front {
+	background: #900f5c;
+	color: white;
+}
+
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pager li > a:hover, .pager li > a:focus {
+    background-color: #ec008c;
+    color: #fff;
+}
+
+
+.spinner {
+	border-top-color: #ec008c;
+}
+
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+	border-color: #ec008c;
+}
+
+.btn-2:hover, .btn-2:active, .btn-2 {
+	box-shadow: 0 4px #900f5c;
+}
+
+
+.author-content, #cn-tabs .service, .comment-des, .contact-box {
+	border-bottom-color:#ec008c;
+}
+
+a, a:hover, a:focus, 
+.flat .plan li > strong, 
+#slider_left i:hover, 
+#slider_right i:hover, 
+.text-color, 
+.cl-effect-21 a:hover,
+.cl-effect-21 a:focus,
+.cl-effect-21 .active a,
+.cl-effect-21 .active a:focus,
+.navbar-nav > li > a:hover, 
+.navbar-nav > li > a:focus, 
+.navbar-nav > li.active > a,
+.post-date a.date strong,
+.pagination > li > a, 
+.pagination > li > span,
+.fun,
+.btn-1:hover,
+.btn-1:active {
+    color: #ec008c;
+}

@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
+<head>
+
+	<link rel="stylesheet" href="../ew-editor.css">
+
+	<link rel="stylesheet" href="../css/froala_editor.css">
+	<link rel="stylesheet" href="../css/froala_style.css">
+	<link rel="stylesheet" href="../css/plugins/code_view.css">
+	<link rel="stylesheet" href="../css/plugins/colors.css">
+	<link rel="stylesheet" href="../css/plugins/emoticons.css">
+	<link rel="stylesheet" href="../css/plugins/image_manager.css">
+	<link rel="stylesheet" href="../css/plugins/image.css">
+	<link rel="stylesheet" href="../css/plugins/line_breaker.css">
+	<link rel="stylesheet" href="../css/plugins/table.css">
+	<link rel="stylesheet" href="../css/plugins/char_counter.css">
+	<link rel="stylesheet" href="../css/plugins/video.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+      <meta charset="utf-8">
+      <title>EW</title>
+      <meta name="description" content="Agency Parallax Responsive HTML5/CSS3 Template from FIFOTHEMES.COM">
+      <meta name="author" content="FIFOTHEMES.COM">
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Google Fonts -->
+      <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> -->
+      <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'> -->
+      <!-- <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> -->
+      <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" /> -->
+      <!-- Library CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/team-member.css" media="screen">
+      <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="css/animations.css" media="screen">
+      <link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
+      <link rel="stylesheet" href="css/jquery.bxslider.css" media="screen">
+      <!-- Theme CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/global.css">
+      <!-- Skin -->
+      <link rel="stylesheet" href="css/colors/blue.css" class="colors">
+      
+
+      <!-- Favicons -->
+      <link rel="shortcut icon" href="img/ico/favicon.ico">
+      <link rel="apple-touch-icon" href="img/ico/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144.png">
+      <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <!--[if IE]>
+      <link rel="stylesheet" href="css/ie.css">
+      <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#navigation" data-offset="75">
+
+	<div>
+		<a href="#" class="ew-gear" title="Habilitar Edición"><i class="fa fa-edit"></i></a>
+		<a href="#" class="ew-save" title="Guardar Página"><i class="fa fa-save"></i></a>
+	</div>
+
+      <!-- Page Preloader -->
+       <div class="page-mask">
+            <div class="page-loader"> 
+
+                <div class="spinner"></div>
+            </div>
+      </div>
+      <!-- /Page Preloader -->
+
+      <!-- Warpper -->
+      <div class="wrap with-logo">
+
+            <!-- Image Background Parallax -->
+            <section id="section" class="image-parallax" style="background-image: url(img/slider/bx1.jpg)">
+                  <div class="bg-overlay">
+                        <div class="slide-content light">
+                              <div class="align-center editable">
+                                    <ul class="text-slide">                
+                                          <li>XYZ <span class="text-color">REAL</span> STATE</li>            
+                                    </ul>
+									<div id="froala-editor">asd</div>
+                                    <a href="#section2" class="btn btn-1 img-btn">CONOCÉ MÁS</a>
+                              </div>
+                        </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+                  </div>
+            </section>
+            <!--/Image Background Parallax -->
+
+            <!-- Section 2 -->
+            <section id="section2" class="about">
+                  <div class="container">
+                        <!-- Title row -->
+                        <div class="row editable">
+                              <div class="col-md-12 big-title wow bounceIn">
+                                    <h2>About Us</h2>
+                              </div>
+
+                              <div class="clearfix"></div>
+
+                              <div class="col-md-12 sub-title text-center wow slideInRight">
+                                    <h3>We match the project goals with a proposed solution considering latest web features, web design and corporate branding!</h3>
+                              </div>
+                        </div>
+                        <!-- /Title row -->
+
+                        <div class="row editable">
+                              <div class="col-md-12">
+                                    <img src="img/imac-device.png" alt="About Us" class="img-responsive">
+                              </div>
+                        </div>
+
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+                        
+                  </div>
+			</section>
+
+                  <!-- Service wrap -->
+			<section id="wrap" class="about">
+				<div class="about-wrap">
+					<div class="parallax-layer">
+						  <div class="icons"></div>
+					</div>
+					<div class="parallax-layer">
+						  <div class="texture"></div>
+					</div>
+					<div class="container editable">
+						  <!-- Content row -->
+						  <div class="row">
+								<!-- Content box 1 -->
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									  <div class="content-box big ch-item wow fadeInLeft">
+											<div class="content-box-info">
+												  <h4>Professional Work</h4>
+												  <p>
+													 Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!
+												  </p>
+											</div>
+									  </div>
+								</div>
+								<!-- /Content box 1 -->
+
+								<!-- Content box 2 -->
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									  <div class="content-box big ch-item wow fadeInDown">
+											<div class="content-box-info">
+												  <h4>Unique Design</h4>
+												  <p>
+													 Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!
+												  </p>
+											</div>
+									  </div>
+								</div>
+								<!-- /Content box 2 -->
+
+								<!-- Content box 3 -->
+								<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+									  <div class="content-box big ch-item wow fadeInRight">
+											<div class="content-box-info">
+												  <h4>Superb Support</h4>
+												  <p>
+													 Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!
+												  </p>
+											</div>
+									  </div>
+								</div>
+								<!-- /Content box 3 -->
+						  </div>
+						  <!-- /Content row -->
+					</div>
+
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+				</div>
+                  <!-- /Service wrap -->
+			</section>
+
+                  <!-- What we do best -->
+			<section id="whatwedobest" class="about">
+                  <div class="skills-wrap">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable">
+                                    <div class="col-md-12 big-title wow bounceIn">
+                                          <h2>What we do best</h2>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-12 sub-title text-center wow slideInRight">
+                                          <h3>It is not enough that we do our best; sometimes we must do what is required!</h3>
+                                    </div>
+                              </div>
+                              <!-- /Title row -->
+
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                        </div>
+                  </div>
+                  <!-- /What we do best -->
+			</section>
+
+			<section id="quoteoftheday">
+                  <!-- Quote of the day -->
+                  <div class="quote-wrap light">
+                        <div class="texture-layer">
+                              <div class="container editable">
+                                    <h2>
+                                          <i class="fa fa-quote-left wow fadeInLeft"></i>
+                                          <span class="wow bounceIn">
+                                                Design is a plan for arranging elements in such a way as best to accomplish a particular purpose.
+                                          </span>
+                                          <i class="fa fa-quote-right wow" data-animate="fadeInRight"></i>
+                                    </h2>
+                                    <p class="animated wow" data-animate="fadeInUp">- Charles Eames -</p>
+                              </div>
+                        </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                  </div>
+                  <!-- /Quote of the day -->
+			</section>
+
+			<section id="team">
+                  <!-- Agency team -->
+                  <div class="team-wrap">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable">
+                                    <div class="col-md-12 big-title wow bounceIn">
+                                          <h2>Agency Team</h2>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-12 sub-title text-center wow slideInRight">
+                                          <h3>Get to know the talented people behind it all, and read our latest thinking about web design process, web development and content Agencying!</h3>
+                                    </div>
+                              </div>
+                              <!-- /Title row -->
+
+                              <!-- Team members row 1-->
+                              <div class="row editable">
+                                    <!-- item 1 -->
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInLeft">
+                                          <div class="team-member">
+                                                <div class="team-member-holder">
+                                                      <img alt="" src="img/team/team-member-1.jpg">
+                                                      <div class="team-member-meta">
+                                                            <h4 class="team-member-name">Monzurul Haque</h4>
+                                                            <div class="team-member-role">
+                                                                  CEO
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- End -->
+                                    <!-- item 2 -->
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
+                                          <div class="team-member">
+                                                <div class="team-member-holder">
+                                                      <img alt="" src="img/team/team-member-1.jpg">
+                                                      <div class="team-member-meta">
+                                                            <h4 class="team-member-name">Jessica Alba</h4>
+                                                            <div class="team-member-role">
+                                                                  CMO
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- End -->
+                                    <!-- item 3 -->
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown">
+                                          <div class="team-member">
+                                                <div class="team-member-holder">
+                                                      <img alt="" src="img/team/team-member-1.jpg">
+                                                      <div class="team-member-meta">
+                                                            <h4 class="team-member-name">Emma Watson</h4>
+                                                            <div class="team-member-role">
+                                                                  CFO
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- End -->
+                                    <!-- item 4 -->
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInRight">
+                                          <div class="team-member">
+                                                <div class="team-member-holder">
+                                                      <img alt="" src="img/team/team-member-1.jpg">
+                                                      <div class="team-member-meta">
+                                                            <h4 class="team-member-name">Atiar Rahman</h4>
+                                                            <div class="team-member-role">
+                                                                  CTO
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- End -->
+                              </div>
+                              <!-- /Team members row 1-->
+                        </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                  </div>
+                  <!-- /Agency team -->
+			</section>
+
+			<section id="fun-wrap">
+                  <!-- Fun Facts -->
+                  <div class="fun-wrap">
+                        <div class="texture-layer">
+                              <div class="container">
+                                     <!-- Title row -->
+                                    <div class="row editable">
+                                          <div class="col-md-12 big-title light wow bounceIn">
+                                                <h2>Some Fun Facts</h2>
+                                          </div>
+                                    </div>
+                                    <!-- /Title row -->
+
+                                    <div class="row">
+                                          <div class="col-md-3 wow fadeInLeft">
+                                                <div class="fun-box editable">
+													  <span class="fun">4555</span>
+                                                      <p>Hours of work</p>
+                                                </div>
+                                          </div>
+
+                                          <div class="col-md-3 wow fadeInDown">
+                                                <div class="fun-box editable">
+                                                      <span class="fun">101</span>
+                                                      <p>Satisfied client</p>
+                                                </div>
+                                          </div>
+
+                                          <div class="col-md-3 wow fadeInDown">
+                                                <div class="fun-box editable">
+                                                      <span class="fun">222</span>
+                                                      <p>Projects Completed</p>
+                                                </div>
+                                          </div>
+
+                                          <div class="col-md-3 wow fadeInRight">
+                                                <div class="fun-box editable">
+                                                      <span class="fun">45</span>
+                                                      <p>Awards Won</p>
+                                                </div>
+                                          </div>
+                                    </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- /Fun Facts -->
+            </section>
+            <!-- /Section 2 -->
+
+            <!-- Section 3 -->
+            <section id="section3" class="portfolio">
+                  <!-- Title row -->
+                        <div class="row editable">
+                              <div class="col-md-12 big-title wow bounceIn">
+                                    <h2>Portfolio</h2>
+                              </div>
+
+                              <div class="clearfix"></div>
+
+                              <div class="col-md-12 sub-title text-center wow slideInRight">
+                                    <h3>More people will pay you money to help them achieve a monetary goal than will pay you to give them something pretty to look at!</h3>
+                              </div>
+                        </div>
+                  <!-- /Title row -->
+
+                  <!-- Portfolio Wrap -->  
+                    <div id="portfolio-wrap">
+                    
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four wordpress html css">
+                              <div class="img-holder editable">
+                                    <img class="img-responsive" src="img/portfolio/portfolio2.jpg" alt="">
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->       
+                    
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four php jquery">
+                              <div class="img-holder editable">
+                                    <img class="img-responsive" src="img/portfolio/portfolio3.jpg" alt="">
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->      
+                        
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four wordpress css html">
+                              <div class="img-holder editable">
+                                    <img class="img-responsive" src="img/portfolio/portfolio4.jpg" alt="">
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+                        
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four branding jquery">
+                              <div class="img-holder editable">
+                                    <img class="img-responsive" src="img/portfolio/portfolio5.jpg" alt="">
+                                </div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+
+
+                   </div>
+
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                  <!-- /Portfolio Wrap -->
+            </section>
+            <!-- /Section 3 -->
+
+            <!-- Section 4 -->
+            <section id="section4" class="services">
+                  <div class="service-wrap">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable">
+                                    <div class="col-md-12 big-title wow bounceIn">
+                                          <h2>Services</h2>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-12 sub-title text-center wow slideInRight">
+                                          <h3>We match the project goals with a proposed solution considering latest web features, web design and corporate branding!</h3>
+                                    </div>
+                              </div>
+                              <!-- /Title row -->
+
+                              <!-- Service row 1 -->
+                              <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>Responsive Layout</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>Retina Ready</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>Rich Elements</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- Service row 1 -->
+
+                              <!-- Service row 2 -->
+                              <div class="row editable">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>Unique Design</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>New Approach</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>SEO Ready</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- Service row 2 -->
+
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                        </div>
+                  </div>
+            </section>
+            <!-- /Section 4 -->
+
+            <!-- Section 5 -->
+            <section id="section5" class="clients">
+                  <div class="testimonial-wrap">
+                        <div class="texture-layer">
+                              <div class="container">
+                                    <!-- Title row -->
+                                    <div class="row editable">
+                                          <div class="col-md-12 big-title light wow bounceIn">
+                                                <h2>Clients Feedback</h2>
+                                          </div>
+
+                                          <div class="clearfix"></div>
+
+                                          <div class="col-md-12 sub-title text-center light wow slideInRight">
+                                                <h3>Great designs are made by excellent use of white space, and plenty of it!</h3>
+                                          </div>
+                                    </div>
+                                    <!-- /Title row -->
+
+                                    <!-- Testimonial row-->
+                                    <div class="row editable">
+                                          <div class="testimonials">
+                                                <div class="col-md-1">
+                                                      <div class="carousel-controls">
+                                                            <a class="prev" href="#testimonials-carousel" data-slide="prev">
+                                                                  <i class="fa fa-angle-left"></i>
+                                                            </a>
+                                                            
+                                                      </div>
+                                                </div>
+                                                <div class="col-md-10">
+                                                <div id="testimonials-carousel" class="testimonials-carousel carousel slide">
+                                                      <div class="carousel-inner">
+                                                            <div class="item active">
+                                                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="testimonial item">
+                                                                              <p>
+                                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                              </p>
+                                                                              <div class="testimonials-arrow"></div>
+                                                                              <div class="author">
+                                                                                    <div class="testimonial-image ">
+                                                                                          <img alt="" src="img/testimonial/team-member-1.jpg">
+                                                                                    </div>
+                                                                                    <div class="testimonial-author-info">
+                                                                                          <a href="#"><span class="color">Monica Sing</span></a> FIFO Themes
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="testimonial item">
+                                                                              <p>
+                                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                              </p>
+                                                                              <div class="testimonials-arrow"></div>
+                                                                              <div class="author">
+                                                                                    <div class="testimonial-image ">
+                                                                                          <img alt="" src="img/testimonial/team-member-2.jpg">
+                                                                                    </div>
+                                                                                    <div class="testimonial-author-info">
+                                                                                          <a href="#"><span class="color">Monzurul Haque</span></a> FIFO Themes
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                            <div class="item">
+                                                                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                                        <div class="testimonial item">
+                                                                              <p>
+                                                                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                                                              </p>
+                                                                              <div class="testimonials-arrow"></div>
+                                                                              <div class="author">
+                                                                                    <div class="testimonial-image ">
+                                                                                          <img alt="" src="img/testimonial/team-member-3.jpg">
+                                                                                    </div>
+                                                                                    <div class="testimonial-author-info">
+                                                                                          <a href="#"><span class="color">Carol Johansen</span></a> FIFO Themes
+                                                                                    </div>
+                                                                              </div>
+                                                                        </div>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                          <div class="col-md-1">
+                                                      <div class="carousel-controls pull-right">
+                                                            <a class="next" href="#testimonials-carousel" data-slide="next">
+                                                                  <i class="fa fa-angle-right"></i>
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <!-- /Testimonial row-->
+
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                              </div>
+                        </div>
+                  </div>
+
+            </section>
+            <!-- /Section 5 -->
+
+            <!-- Section 6 -->
+            <section id="section6" class="pricing">
+                  <div class="container">
+                        <div class="row flat">
+                              <!-- Title row -->
+                              <div class="row editable">
+                                    <div class="col-md-12 big-title wow bounceIn">
+                                          <h2>Pricing</h2>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-12 sub-title text-center wow slideInRight">
+                                          <h3>What you have become is the price you paid to get what you used to want!</h3>
+                                    </div>
+                              </div>
+                              <!-- /Title row -->
+
+                              <div class="row editable">
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft">
+                                          <ul class="plan plan1">
+                                                <li class="plan-name">
+                                                      Basic
+                                                </li>
+                                                <li class="plan-price">
+                                                      <strong>$29</strong> / month
+                                                </li>
+                                                <li>
+                                                      <strong>5GB</strong> Storage
+                                                </li>
+                                                <li>
+                                                      <strong>1GB</strong> RAM
+                                                </li>
+                                                <li>
+                                                      <strong>400GB</strong> Bandwidth
+                                                </li>
+                                                <li>
+                                                      <strong>10</strong> Email Address
+                                                </li>
+                                                <li>
+                                                      <strong>Forum</strong> Support
+                                                </li>
+                                                <li class="plan-action">
+                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                          <ul class="plan plan2 featured">
+                                                <li class="plan-name">
+                                                      Standard
+                                                </li>
+                                                <li class="plan-price">
+                                                      <strong>$39</strong> / month
+                                                </li>
+                                                <li>
+                                                      <strong>5GB</strong> Storage
+                                                </li>
+                                                <li>
+                                                      <strong>1GB</strong> RAM
+                                                </li>
+                                                <li>
+                                                      <strong>400GB</strong> Bandwidth
+                                                </li>
+                                                <li>
+                                                      <strong>10</strong> Email Address
+                                                </li>
+                                                <li>
+                                                      <strong>Forum</strong> Support
+                                                </li>
+                                                <li class="plan-action">
+                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInDown">
+                                          <ul class="plan plan3">
+                                                <li class="plan-name">
+                                                      Advanced
+                                                </li>
+                                                <li class="plan-price">
+                                                      <strong>$199</strong> / month
+                                                </li>
+                                                <li>
+                                                      <strong>5GB</strong> Storage
+                                                </li>
+                                                <li>
+                                                      <strong>1GB</strong> RAM
+                                                </li>
+                                                <li>
+                                                      <strong>400GB</strong> Bandwidth
+                                                </li>
+                                                <li>
+                                                      <strong>10</strong> Email Address
+                                                </li>
+                                                <li>
+                                                      <strong>Forum</strong> Support
+                                                </li>
+                                                <li class="plan-action">
+                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInRight">
+                                          <ul class="plan plan4">
+                                                <li class="plan-name">
+                                                      Mighty
+                                                </li>
+                                                <li class="plan-price">
+                                                      <strong>$999</strong> / month
+                                                </li>
+                                                <li>
+                                                      <strong>5GB</strong> Storage
+                                                </li>
+                                                <li>
+                                                      <strong>1GB</strong> RAM
+                                                </li>
+                                                <li>
+                                                      <strong>400GB</strong> Bandwidth
+                                                </li>
+                                                <li>
+                                                      <strong>10</strong> Email Address
+                                                </li>
+                                                <li>
+                                                      <strong>Forum</strong> Support
+                                                </li>
+                                                <li class="plan-action">
+                                                      <a href="#" class="btn btn-2 btn-2c">Signup</a>
+                                                </li>
+                                          </ul>
+                                    </div>
+                              </div>
+
+                        </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+                  </div>
+            </section>
+            <!-- /Section 6 -->
+
+            <!-- Section 7 -->
+            <section id="section7" class="contacts">
+                  <!-- Subscription Wrap -->
+                  <div class="subscription-wrap light">
+                        <div class="texture-layer">
+                              <div class="container">
+                                    <!-- Title row -->
+                                    <div class="row editable">
+                                          <div class="col-md-12 big-title light wow bounceIn">
+                                                <h2>Subscribe with us</h2>
+												<h3>...</h3>
+                                          </div>
+                                    </div>
+                                    <!-- /Title row -->
+                              </div>
+                        </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                  </div>
+
+                  <!-- /Subscription Wrap -->
+            </section>
+
+            <section id="contacts" class="contacts">
+                  <!-- Contact form -->
+                  <div class="contact-form">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable">
+                                    <div class="col-md-12 big-title wow bounceIn">
+                                          <h2>Contact</h2>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <div class="col-md-12 sub-title text-center wow slideInRight">
+                                          <h3>Contact with us to learn more about all of our Web Design Services!</h3>
+                                    </div>
+                              </div>
+                              <!-- /Title row -->
+
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+
+                        </div>
+                  </div>
+                  <!-- /Contact form -->
+            </section>
+            <!-- /Section 7 -->
+
+			  <footer class="footer-wrap text-center">
+					<div class="container">
+						<p class="site-info wow fadeInUp">Copyright &copy; 2016. Sitio creado con <a href="http://www.empireweb.com.ar" target="_blank">Empire Web.</a> Todos los derechos reservados.</p>
+					</div>
+			  </footer>
+
+            <a href="#" class="scrollup2"><i class="fa fa-angle-down"></i></a>
+
+            <!-- Scroll To Top --> 
+            <a href="#" class="scrollup"><i class="fa fa-angle-up"></i></a>
+      </div>
+      <!-- /Warpper -->
+
+
+
+      <!-- The Scripts -->
+      <script src="js/jquery.min.js"></script>
+      <!-- <script src="js/jquery-migrate-1.0.0.js"></script> -->
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.parallax.js"></script>
+      <script src="js/jquery.hparallax.js"></script>
+      <script src="js/jquery.wait.js"></script> 
+      <script src="js/appear.js"></script>
+      <script src="js/fappear.js"></script>  
+      <script src="js/modernizr-2.6.2.min.js"></script>
+      <script src="js/jquery.bxslider.min.js"></script>
+      <script src="js/jquery.maximage.js"></script>
+      <script src="js/jquery.cycle.all.js"></script>
+      <script src="js/jquery.prettyPhoto.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/jquery.isotope.js"></script>
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <script src="js/jquery.countTo.js"></script>
+      <script src="js/skrollr.min.js"></script>
+      <script src="js/jquery.scrollTo.min.js"></script>
+      <script src="js/jquery.nav.js"></script>
+      <script src="js/wow.js"></script>
+      <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+      <script src="js/jquery.gmap.min.js"></script>
+      <script src="js/jquery.mb.YTPlayer.js"></script>
+      <script src="js/tytabs.js"></script>
+      <script src="js/custom.js"></script>
+      
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="../js/froala_editor.min.js"></script>
+<script type="text/javascript" src="../js/plugins/align.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_view.min.js"></script>
+<script type="text/javascript" src="../js/plugins/colors.min.js"></script>
+<script type="text/javascript" src="../js/plugins/draggable.min.js"></script>
+<script type="text/javascript" src="../js/plugins/emoticons.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_size.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_family.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image_manager.min.js"></script>
+<script type="text/javascript" src="../js/plugins/line_breaker.min.js"></script>
+<script type="text/javascript" src="../js/plugins/link.min.js"></script>
+<script type="text/javascript" src="../js/plugins/lists.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_format.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/table.min.js"></script>
+<script type="text/javascript" src="../js/plugins/video.min.js"></script>
+<script type="text/javascript" src="../js/plugins/url.min.js"></script>
+<script type="text/javascript" src="../js/plugins/entities.min.js"></script>
+<script type="text/javascript" src="../js/plugins/char_counter.min.js"></script>
+<script type="text/javascript" src="../js/plugins/inline_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/save.min.js"></script>
+<script type="text/javascript" src="../js/languages/es.js"></script>
+
+<script src="../jscolor-2.0.4/jscolor.js"></script>
+
+<script type="text/javascript" src="../ew-editor.js"></script>
+
+</body>
+</html>

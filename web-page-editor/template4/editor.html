@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<link rel="stylesheet" href="../ew-editor.css">
+
+	<link rel="stylesheet" href="../css/froala_editor.css">
+	<link rel="stylesheet" href="../css/froala_style.css">
+	<link rel="stylesheet" href="../css/plugins/code_view.css">
+	<link rel="stylesheet" href="../css/plugins/colors.css">
+	<link rel="stylesheet" href="../css/plugins/emoticons.css">
+	<link rel="stylesheet" href="../css/plugins/image_manager.css">
+	<link rel="stylesheet" href="../css/plugins/image.css">
+	<link rel="stylesheet" href="../css/plugins/line_breaker.css">
+	<link rel="stylesheet" href="../css/plugins/table.css">
+	<link rel="stylesheet" href="../css/plugins/char_counter.css">
+	<link rel="stylesheet" href="../css/plugins/video.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EW</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+	<div>
+		<a href="#" class="ew-gear" title="Habilitar Edición"><i class="fa fa-edit"></i></a>
+		<a href="#" class="ew-save" title="Guardar Página"><i class="fa fa-save"></i></a>
+	</div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="intro-text editable">
+                <div class="intro-lead-in">Es un gusto que estés acá</div>
+                <div class="intro-heading">¡Bienvenido!</div>
+                <a href="#services" class="page-scroll btn btn-xl">COMENZAR</a>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+					<br><br><br>
+				</div>
+			</div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Services</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row text-center editable">
+                <div class="col-md-4">
+                    <h4 class="service-heading">E-Commerce</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">Responsive Design</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">Web Security</h4>
+                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row editable">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>Round Icons</h4>
+                        <p class="text-muted">Graphic Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <img src="img/portfolio/startup-framework.png" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>Startup Framework</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <img src="img/portfolio/treehouse.png" class="img-responsive" alt="">
+                    <div class="portfolio-caption">
+                        <h4>Treehouse</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row editable">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2009-2011</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>March 2011</h4>
+                                    <h4 class="subheading">An Agency is Born</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+            <div class="row editable">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Kay Garland</h4>
+                        <p class="text-muted">Lead Designer</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Larry Parker</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Diana Pertersen</h4>
+                        <p class="text-muted">Lead Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row editable">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#">
+                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="copyright">Copyright &copy; 2016. Sitio creado con <a href="http://www.empireweb.com.ar" target="_blank">Empire Web.</a> Todos los derechos reservados.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="../js/froala_editor.min.js"></script>
+<script type="text/javascript" src="../js/plugins/align.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_view.min.js"></script>
+<script type="text/javascript" src="../js/plugins/colors.min.js"></script>
+<script type="text/javascript" src="../js/plugins/draggable.min.js"></script>
+<script type="text/javascript" src="../js/plugins/emoticons.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_size.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_family.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image_manager.min.js"></script>
+<script type="text/javascript" src="../js/plugins/line_breaker.min.js"></script>
+<script type="text/javascript" src="../js/plugins/link.min.js"></script>
+<script type="text/javascript" src="../js/plugins/lists.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_format.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/table.min.js"></script>
+<script type="text/javascript" src="../js/plugins/video.min.js"></script>
+<script type="text/javascript" src="../js/plugins/url.min.js"></script>
+<script type="text/javascript" src="../js/plugins/entities.min.js"></script>
+<script type="text/javascript" src="../js/plugins/char_counter.min.js"></script>
+<script type="text/javascript" src="../js/plugins/inline_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/save.min.js"></script>
+<script type="text/javascript" src="../js/languages/es.js"></script>
+
+<script src="../jscolor-2.0.4/jscolor.js"></script>
+
+<script type="text/javascript" src="../ew-editor.js"></script>
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-9443358-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+	var _mfq = _mfq || [];
+	(function() {
+		var mf = document.createElement("script");
+		mf.type = "text/javascript"; mf.async = true;
+		mf.src = "//cdn.mouseflow.com/projects/0793da80-9e7f-4e98-a7cf-09ca6e9e4511.js";
+		document.getElementsByTagName("head")[0].appendChild(mf);
+	})();
+</script>
+ -->
+</body>
+
+</html>

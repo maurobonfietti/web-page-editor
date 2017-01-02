@@ -1,0 +1,548 @@
+<!DOCTYPE html><html class=" js flexbox canvas canvastext webgl touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head>
+
+	<link rel="stylesheet" href="../ew-editor.css">
+
+	<link rel="stylesheet" href="../css/froala_editor.css">
+	<link rel="stylesheet" href="../css/froala_style.css">
+	<link rel="stylesheet" href="../css/plugins/code_view.css">
+	<link rel="stylesheet" href="../css/plugins/colors.css">
+	<link rel="stylesheet" href="../css/plugins/emoticons.css">
+	<link rel="stylesheet" href="../css/plugins/image_manager.css">
+	<link rel="stylesheet" href="../css/plugins/image.css">
+	<link rel="stylesheet" href="../css/plugins/line_breaker.css">
+	<link rel="stylesheet" href="../css/plugins/table.css">
+	<link rel="stylesheet" href="../css/plugins/char_counter.css">
+	<link rel="stylesheet" href="../css/plugins/video.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+      <meta charset="utf-8">
+      <title>EW</title>
+      <meta name="description" content="Agency Parallax Responsive HTML5/CSS3 Template from FIFOTHEMES.COM">
+      <meta name="author" content="FIFOTHEMES.COM">
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Google Fonts -->
+      <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> -->
+      <!-- <link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'> -->
+      <!-- <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> -->
+      <!-- <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine" /> -->
+      <!-- Library CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="css/team-member.css" media="screen">
+      <link rel="stylesheet" href="css/fonts/font-awesome/css/font-awesome.css">
+      <link rel="stylesheet" href="css/animations.css" media="screen">
+      <link rel="stylesheet" href="css/prettyPhoto.css" media="screen">
+      <link rel="stylesheet" href="css/jquery.bxslider.css" media="screen">
+      <!-- Theme CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/global.css">
+      <!-- Skin -->
+      <link rel="stylesheet" href="css/colors/blue.css" class="colors">
+      
+
+      <!-- Favicons -->
+      <link rel="shortcut icon" href="img/ico/favicon.ico">
+      <link rel="apple-touch-icon" href="img/ico/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/ico/apple-touch-icon-72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/ico/apple-touch-icon-114.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/ico/apple-touch-icon-144.png">
+      <!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="js/respond.min.js"></script>
+      <![endif]-->
+      <!--[if IE]>
+      <link rel="stylesheet" href="css/ie.css">
+      <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#navigation" data-offset="75" style="overflow-y: auto;">
+
+	<div>
+		<a href="#" class="ew-bars">
+			<i class="fa fa-bars"></i>
+			</a><a href="#" class="ew-gear" style="display: none;"><i class="fa fa-gear"></i></a>
+			<a href="#" class="ew-save" style="display: block;"><i class="fa fa-save"></i></a>
+		
+	</div>
+
+      <!-- Page Preloader -->
+       <div class="page-mask" style="display: none;">
+            <div class="page-loader"> 
+
+                <div class="spinner"></div>
+            </div>
+      </div>
+      <!-- /Page Preloader -->
+
+      <!-- Warpper -->
+      <div class="wrap with-logo">
+
+            <!-- Image Background Parallax -->
+            <section id="section" class="image-parallax" style="background-image: url(&quot;img/slider/bx1.jpg&quot;); background-position: 50% -65px;">
+                  <div class="bg-overlay">
+                        <div class="slide-content light">
+                              <div class="align-center editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 180px;"><ul class="text-slide" style="width: auto; position: relative;"><li style="float: none; list-style: none; position: absolute; width: 1214px; z-index: 50; display: block;">HOLA <span class="text-color">REY</span></li></ul></div></div><p><a class="btn btn-1 img-btn" href="#section2">COMENZAR</a></p></div></div></div>
+                        </div>
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div>
+						</div>
+                  </div>
+            </section>
+            <!--/Image Background Parallax -->
+
+            <!-- Section 2 -->
+            <section id="section2" class="about">
+                  <div class="container">
+                        <!-- Title row -->
+                        <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;"><h2>About Us</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;"><h3>We match the project goals with a proposed solution considering latest web features, web design and corporate branding!</h3></div></div></div></div>
+                        <!-- /Title row -->
+
+                        <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper show-placeholder" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12"><br></div></div><div class="fr-image-resizer" style="top: 4px; left: 14px; width: 1140px; height: 445.313px;"><div class="fr-handler fr-hnw"></div><div class="fr-handler fr-hne"></div><div class="fr-handler fr-hsw"></div><div class="fr-handler fr-hse"></div></div><span class="fr-placeholder" style="font-size: 14px; line-height: 24px; margin-top: 0px; padding-top: 0px; padding-left: 0px; margin-left: 0px;">Escriba algo</span></div></div>
+
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div>
+						</div>
+                        
+                  </div>
+			</section>
+
+                  <!-- Service wrap -->
+			<section id="wrap" class="about">
+				<div class="about-wrap">
+					<div class="parallax-layer" style="top: 58.1812%; margin-top: -290.906px; left: 50.2595%; margin-left: -804.151px;">
+						  <div class="icons"></div>
+					</div>
+					<div class="parallax-layer" style="top: 58.1812%; margin-top: -290.906px; left: 50.2595%; margin-left: -804.151px;">
+						  <div class="texture"></div>
+					</div>
+					<div class="container editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><!-- Content row --><div class="row"><!-- Content box 1 --><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="content-box big ch-item wow fadeInLeft animated" style="visibility: visible;"><div class="content-box-info"><h4>Professional Work</h4><p>Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!</p></div></div></div><!-- /Content box 1 --><!-- Content box 2 --><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="content-box big ch-item wow fadeInDown animated" style="visibility: visible;"><div class="content-box-info"><h4>Unique Design</h4><p>Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!</p></div></div></div><!-- /Content box 2 --><!-- Content box 3 --><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"><div class="content-box big ch-item wow fadeInRight animated" style="visibility: visible;"><div class="content-box-info"><h4>Superb Support</h4><p>Great development is the architecture that complements and supports the design. It is made by excellent use of white space, and plenty of it!</p></div></div></div><!-- /Content box 3 --></div><!-- /Content row --></div></div></div>
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div><br><br>
+						</div>
+
+				</div>
+                  <!-- /Service wrap -->
+			</section>
+
+                  <!-- What we do best -->
+			<section id="whatwedobest" class="about">
+                  <div class="skills-wrap">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;"><h2>What we do best</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;"><h3>It is not enough that we do our best; sometimes we must do what is required!</h3></div></div></div></div>
+                              <!-- /Title row -->
+								<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+									<div class="col-lg-12">
+										<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+										<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+										<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+										<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+										<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+									</div>
+								</div>
+
+                        </div>
+                  </div>
+                  <!-- /What we do best -->
+			</section>
+
+			<section id="quoteoftheday">
+                  <!-- Quote of the day -->
+                  <div class="quote-wrap light" style="background-position: 30% 8px;">
+                        <div class="texture-layer">
+                              <div class="container editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><h2><i class="fa fa-quote-left wow fadeInLeft animated" style="visibility: visible;"></i> SI VAS A HACER ALGO, HAZLO BIEN<span class="wow bounceIn animated" style="visibility: visible;">.&nbsp;</span><i class="fa fa-quote-right wow animated" data-animate="fadeInRight" style="visibility: visible;"></i></h2><p class="animated wow animated" data-animate="fadeInUp" style="visibility: visible;">- LUIS B. -</p></div></div></div>
+                        </div>
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div>
+						</div>
+
+                  </div>
+                  <!-- /Quote of the day -->
+			</section>
+
+			<section id="team">
+                  <!-- Agency team -->
+                  <div class="team-wrap">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;"><h2>Agency Team</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;"><h3>Get to know the talented people behind it all, and read our latest thinking about web design process, web development and content Agencying!</h3></div></div></div></div>
+                              <!-- /Title row -->
+
+                              <!-- Team members row 1-->
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><!-- item 1 --><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInLeft animated" style="visibility: visible;"><div class="team-member"><div class="team-member-holder"><img alt="" src="img/team/team-member-1.jpg" class="fr-dii fr-draggable"><div class="team-member-meta"><h4 class="team-member-name">Monzurul Haque</h4><div class="team-member-role">CEO</div></div></div></div></div><!-- End --><!-- item 2 --><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown animated" style="visibility: visible;"><div class="team-member"><div class="team-member-holder"><img alt="" src="img/team/team-member-1.jpg" class="fr-dii fr-draggable"><div class="team-member-meta"><h4 class="team-member-name">Jessica Alba</h4><div class="team-member-role">CMO</div></div></div></div></div><!-- End --><!-- item 3 --><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInDown animated" style="visibility: visible;"><div class="team-member"><div class="team-member-holder"><img alt="" src="img/team/team-member-1.jpg" class="fr-dii fr-draggable"><div class="team-member-meta"><h4 class="team-member-name">Emma Watson</h4><div class="team-member-role">CFO</div></div></div></div></div><!-- End --><!-- item 4 --><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 item wow fadeInRight animated" style="visibility: visible;"><div class="team-member"><div class="team-member-holder"><img alt="" src="img/team/team-member-1.jpg" class="fr-dii fr-draggable"><div class="team-member-meta"><h4 class="team-member-name">Atiar Rahman</h4><div class="team-member-role">CTO</div></div></div></div></div><!-- End --></div></div></div>
+                              <!-- /Team members row 1-->
+                        </div>
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div>
+						</div>
+
+                  </div>
+                  <!-- /Agency team -->
+			</section>
+
+			<section id="fun-wrap">
+                  <!-- Fun Facts -->
+                  <div class="fun-wrap">
+                        <div class="texture-layer">
+                              <div class="container">
+                                     <!-- Title row -->
+                                    <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title light wow bounceIn animated" style="visibility: visible;"><h2>Some Fun Facts</h2></div></div></div></div>
+                                    <!-- /Title row -->
+
+                                    <div class="row">
+                                          <div class="col-md-3 wow fadeInLeft animated" style="visibility: visible;">
+                                                <div class="fun-box editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><span class="fun">0</span></p><p>Hours of work</p></div></div></div>
+                                          </div>
+
+                                          <div class="col-md-3 wow fadeInDown animated" style="visibility: visible;">
+                                                <div class="fun-box editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><span class="fun">0</span></p><p>Satisfied client</p></div></div></div>
+                                          </div>
+
+                                          <div class="col-md-3 wow fadeInDown animated" style="visibility: visible;">
+                                                <div class="fun-box editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><span class="fun">0</span></p><p>Projects Completed</p></div></div></div>
+                                          </div>
+
+                                          <div class="col-md-3 wow fadeInRight animated" style="visibility: visible;">
+                                                <div class="fun-box editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><span class="fun">0</span></p><p>Awards Won</p></div></div></div>
+                                          </div>
+                                    </div>
+									<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+										<div class="col-lg-12">
+											<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+											<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+											<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+											<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+											<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+										</div>
+									</div>
+                              </div>
+                        </div>
+                  </div>
+                  <!-- /Fun Facts -->
+            </section>
+            <!-- /Section 2 -->
+
+            <!-- Section 3 -->
+            <section id="section3" class="portfolio">
+                  <!-- Title row -->
+                        <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;"><h2>Portfolio</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;"><h3>More people will pay you money to help them achieve a monetary goal than will pay you to give them something pretty to look at!</h3></div></div></div></div>
+                  <!-- /Title row -->
+
+                  <!-- Portfolio Wrap -->  
+                    <div id="portfolio-wrap" class="isotope" style="position: relative; overflow: hidden; height: 268px;">
+                    
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four wordpress html css isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px); width: 337px;">
+                              <div class="img-holder editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><img class="img-responsive fr-dib fr-draggable" src="img/portfolio/portfolio2.jpg" alt=""></p></div></div></div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->       
+                    
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four php jquery isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px); width: 337px;">
+                              <div class="img-holder editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><img class="img-responsive fr-dib fr-draggable" src="img/portfolio/portfolio3.jpg" alt=""></p></div></div></div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  -->      
+                        
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four wordpress css html isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px); width: 337px;">
+                              <div class="img-holder editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><img class="img-responsive fr-dib fr-draggable" src="img/portfolio/portfolio4.jpg" alt=""></p></div></div></div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+                        
+                        <!-- Portfolio Item With PrettyPhoto  -->                 
+                        <div class="portfolio-item one-four branding jquery isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px); width: 337px;">
+                              <div class="img-holder editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><p><img class="img-responsive fr-dib fr-draggable" src="img/portfolio/portfolio5.jpg" alt=""></p></div></div></div>
+                        </div>
+                        <!-- /Portfolio Item With PrettyPhoto  --> 
+
+
+                   </div>
+
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div>
+						</div>
+
+                  <!-- /Portfolio Wrap -->
+            </section>
+            <!-- /Section 3 -->
+
+            <!-- Section 4 -->
+            <section id="section4" class="services">
+                  <div class="service-wrap">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;"><h2>Services</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;"><h3>We match the project goals with a proposed solution considering latest web features, web design and corporate branding!</h3></div></div></div></div>
+                              <!-- /Title row -->
+
+                              <!-- Service row 1 -->
+                              <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn animated" style="visibility: visible;">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>Responsive Layout</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn animated" style="visibility: visible;">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>Retina Ready</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn animated" style="visibility: visible;">
+                                          <div class="service-box">
+                                                <div class="service-box-content">
+                                                      <h4>Rich Elements</h4>
+                                                      <p>
+                                                            Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.
+                                                      </p>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <!-- Service row 1 -->
+
+                              <!-- Service row 2 -->
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn animated" style="visibility: visible;"><div class="service-box"><div class="service-box-content"><h4>Unique Design</h4><p>Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.</p></div></div></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn animated" style="visibility: visible;"><div class="service-box"><div class="service-box-content"><h4>New Approach</h4><p>Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.</p></div></div></div><div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeIn animated" style="visibility: visible;"><div class="service-box"><div class="service-box-content"><h4>SEO Ready</h4><p>Lorem Ipsum is simply dummy text of Lorem the printing and typesettings.</p></div></div></div></div></div></div>
+                              <!-- Service row 2 -->
+
+								<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+									<div class="col-lg-12">
+										<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+										<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+										<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+										<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+										<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+									</div>
+								</div>
+
+                        </div>
+                  </div>
+            </section>
+            <!-- /Section 4 -->
+
+            <!-- Section 5 -->
+            <section id="section5" class="clients">
+                  <div class="testimonial-wrap" style="background-position: 30% -30px;">
+                        <div class="texture-layer">
+                              <div class="container">
+                                    <!-- Title row -->
+                                    <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title light wow bounceIn animated" style="visibility: visible;"><h2>Clients Feedback</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center light wow slideInRight animated" style="visibility: visible;"><h3>Great designs are made by excellent use of white space, and plenty of it!</h3></div></div></div></div>
+                                    <!-- /Title row -->
+
+                                    <!-- Testimonial row-->
+                                    <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="testimonials"><div class="col-md-1"><div class="carousel-controls"><a class="prev" data-slide="prev" href="#testimonials-carousel"><i class="fa fa-angle-left"></i></a></div></div><div class="col-md-10"><div class="testimonials-carousel carousel slide" id="testimonials-carousel"><div class="carousel-inner"><div class="item active"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="testimonial item"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p><div class="testimonials-arrow"><br></div><div class="author"><div class="testimonial-image "><img alt="" src="img/testimonial/team-member-1.jpg" class="fr-dii fr-draggable"></div><div class="testimonial-author-info"><a href="#"><span class="color">Monica Sing</span></a> FIFO Themes</div></div></div></div></div><div class="item"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="testimonial item"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p><div class="testimonials-arrow"><br></div><div class="author"><div class="testimonial-image "><img alt="" src="img/testimonial/team-member-2.jpg" class="fr-dii fr-draggable"></div><div class="testimonial-author-info"><a href="#"><span class="color">Monzurul Haque</span></a> FIFO Themes</div></div></div></div></div><div class="item"><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><div class="testimonial item"><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p><div class="testimonials-arrow"><br></div><div class="author"><div class="testimonial-image "><img alt="" src="img/testimonial/team-member-3.jpg" class="fr-dii fr-draggable"></div><div class="testimonial-author-info"><a href="#"><span class="color">Carol Johansen</span></a> FIFO Themes</div></div></div></div></div></div></div></div><div class="col-md-1"><div class="carousel-controls pull-right"><a class="next" data-slide="next" href="#testimonials-carousel"><i class="fa fa-angle-right"></i></a></div></div></div></div></div></div>
+                                    <!-- /Testimonial row-->
+
+									<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+										<div class="col-lg-12">
+											<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+											<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+											<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+											<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+											<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+										</div>
+									</div>
+
+                              </div>
+                        </div>
+                  </div>
+
+            </section>
+            <!-- /Section 5 -->
+
+            <!-- Section 6 -->
+            <section id="section6" class="pricing">
+                  <div class="container">
+                        <div class="row flat">
+                              <!-- Title row -->
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;"><h2>Pricing</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;"><h3>What you have become is the price you paid to get what you used to want!</h3></div></div></div></div>
+                              <!-- /Title row -->
+
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInLeft animated" style="visibility: visible;"><ul class="plan plan1"><li class="plan-name">Basic</li><li class="plan-price"><strong>$29</strong> / month</li><li><strong>5GB</strong> Storage</li><li><strong>1GB</strong> RAM</li><li><strong>400GB</strong> Bandwidth</li><li><strong>10</strong> Email Address</li><li><strong>Forum</strong> Support</li><li class="plan-action"><a class="btn btn-2 btn-2c" href="#">Signup</a></li></ul></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><ul class="plan plan2 featured"><li class="plan-name">Standard</li><li class="plan-price"><strong>$39</strong> / month</li><li><strong>5GB</strong> Storage</li><li><strong>1GB</strong> RAM</li><li><strong>400GB</strong> Bandwidth</li><li><strong>10</strong> Email Address</li><li><strong>Forum</strong> Support</li><li class="plan-action"><a class="btn btn-2 btn-2c" href="#">Signup</a></li></ul></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInDown animated" style="visibility: visible;"><ul class="plan plan3"><li class="plan-name">Advanced</li><li class="plan-price"><strong>$199</strong> / month</li><li><strong>5GB</strong> Storage</li><li><strong>1GB</strong> RAM</li><li><strong>400GB</strong> Bandwidth</li><li><strong>10</strong> Email Address</li><li><strong>Forum</strong> Support</li><li class="plan-action"><a class="btn btn-2 btn-2c" href="#">Signup</a></li></ul></div><div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 wow fadeInRight animated" style="visibility: visible;"><ul class="plan plan4"><li class="plan-name">Mighty</li><li class="plan-price"><strong>$999</strong> / month</li><li><strong>5GB</strong> Storage</li><li><strong>1GB</strong> RAM</li><li><strong>400GB</strong> Bandwidth</li><li><strong>10</strong> Email Address</li><li><strong>Forum</strong> Support</li><li class="plan-action"><a class="btn btn-2 btn-2c" href="#">Signup</a></li></ul></div></div></div></div>
+
+                        </div>
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div>
+						</div>
+                  </div>
+            </section>
+            <!-- /Section 6 -->
+
+            <!-- Section 7 -->
+            <section id="section7" class="contacts">
+                  <!-- Subscription Wrap -->
+                  <div class="subscription-wrap light" style="background-position: 30% 3px;">
+                        <div class="texture-layer">
+                              <div class="container">
+                                    <!-- Title row -->
+                                    <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title light wow bounceIn animated" style="visibility: visible;"><h2>Subscribe with us</h2><h3>...</h3></div></div></div></div>
+                                    <!-- /Title row -->
+                              </div>
+                        </div>
+						<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+							<div class="col-lg-12">
+								<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+								<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+								<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+								<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+								<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+							</div>
+						</div>
+
+                  </div>
+
+                  <!-- /Subscription Wrap -->
+            </section>
+
+            <section id="contacts" class="contacts">
+                  <!-- Contact form -->
+                  <div class="contact-form">
+                        <div class="container">
+                              <!-- Title row -->
+                              <div class="row editable fr-box fr-ltr fr-inline"><div class="fr-wrapper" dir="ltr"><div class="fr-element fr-view" dir="ltr" contenteditable="true" spellcheck="true"><div class="col-md-12 big-title wow bounceIn animated" style="visibility: visible;"><h2>Contact</h2></div><div class="clearfix"><br></div><div class="col-md-12 sub-title text-center wow slideInRight animated" style="visibility: visible;"><h3>Contact with us to learn more about all of our Web Design Services!</h3></div></div></div></div>
+                              <!-- /Title row -->
+
+							<div class="row ew-tools text-left" style="visibility: hidden; display: block;">
+								<div class="col-lg-12">
+									<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);">
+									<button onclick="cut(this)" style="color:black;" title="Cortar Sección"><i class="fa fa-fw fa-cut"></i></button>
+									<button onclick="duplicate(this)" style="color:black;" title="Copiar Sección"><i class="fa fa-fw fa-copy"></i></button>
+									<button onclick="paste(this)" style="color:black;" title="Pegar Sección"><i class="fa fa-fw fa-paste"></i></button>
+									<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash"></i></button>
+								</div>
+							</div>
+
+                        </div>
+                  </div>
+                  <!-- /Contact form -->
+            </section>
+            <!-- /Section 7 -->
+
+			  <footer class="footer-wrap text-center">
+					<div class="container">
+						<p class="site-info wow fadeInUp animated" style="visibility: visible;">Copyright © 2016. Sitio creado con <a href="http://www.empireweb.com.ar" target="_blank">Empire Web.</a> Todos los derechos reservados.</p>
+					</div>
+			  </footer>
+
+            <a href="#" class="scrollup2" style="display: none;"><i class="fa fa-angle-down"></i></a>
+
+            <!-- Scroll To Top --> 
+            <a href="#" class="scrollup" style="display: inline;"><i class="fa fa-angle-up"></i></a>
+      </div>
+      <!-- /Warpper -->
+
+
+
+      <!-- The Scripts -->
+      <script src="js/jquery.min.js"></script>
+      <!-- <script src="js/jquery-migrate-1.0.0.js"></script> -->
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.parallax.js"></script>
+      <script src="js/jquery.hparallax.js"></script>
+      <script src="js/jquery.wait.js"></script> 
+      <script src="js/appear.js"></script>
+      <script src="js/fappear.js"></script>  
+      <script src="js/modernizr-2.6.2.min.js"></script>
+      <script src="js/jquery.bxslider.min.js"></script>
+      <script src="js/jquery.maximage.js"></script>
+      <script src="js/jquery.cycle.all.js"></script>
+      <script src="js/jquery.prettyPhoto.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+      <script src="js/jquery.isotope.js"></script>
+      <script src="js/imagesloaded.pkgd.min.js"></script>
+      <script src="js/jquery.countTo.js"></script>
+      <script src="js/skrollr.min.js"></script>
+      <script src="js/jquery.scrollTo.min.js"></script>
+      <script src="js/jquery.nav.js"></script>
+      <script src="js/wow.js"></script>
+      <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+      <script src="js/jquery.gmap.min.js"></script>
+      <script src="js/jquery.mb.YTPlayer.js"></script>
+      <script src="js/tytabs.js"></script>
+      <script src="js/custom.js"></script>
+      
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="../js/froala_editor.min.js"></script>
+<script type="text/javascript" src="../js/plugins/align.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_view.min.js"></script>
+<script type="text/javascript" src="../js/plugins/colors.min.js"></script>
+<script type="text/javascript" src="../js/plugins/draggable.min.js"></script>
+<script type="text/javascript" src="../js/plugins/emoticons.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_size.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_family.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image_manager.min.js"></script>
+<script type="text/javascript" src="../js/plugins/line_breaker.min.js"></script>
+<script type="text/javascript" src="../js/plugins/link.min.js"></script>
+<script type="text/javascript" src="../js/plugins/lists.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_format.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/table.min.js"></script>
+<script type="text/javascript" src="../js/plugins/video.min.js"></script>
+<script type="text/javascript" src="../js/plugins/url.min.js"></script>
+<script type="text/javascript" src="../js/plugins/entities.min.js"></script>
+<script type="text/javascript" src="../js/plugins/char_counter.min.js"></script>
+<script type="text/javascript" src="../js/plugins/inline_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/save.min.js"></script>
+<script type="text/javascript" src="../js/languages/es.js"></script>
+
+<script src="../jscolor-2.0.4/jscolor.js"></script>
+
+<script type="text/javascript" src="../ew-editor.js"></script>
+
+
+<div class="fr-toolbar fr-ltr fr-desktop fr-inline" style="top: 7929px; left: 192.141px; display: none;"><span class="fr-arrow" style="margin-left: -5px;"></span><button type="button" tabindex="-1" aria-label="Negrita" title="Negrita (Ctrl+B)" class="fr-command fr-btn" data-cmd="bold"><i class="fa fa-bold"></i></button><button type="button" tabindex="-1" aria-label="Itálica" class="fr-command fr-btn" data-cmd="italic"><i class="fa fa-italic"></i></button><button type="button" tabindex="-1" aria-label="Subrayado" class="fr-command fr-btn" data-cmd="underline"><i class="fa fa-underline"></i></button><button type="button" tabindex="-1" aria-label="Tachado" title="Tachado (Ctrl+S)" class="fr-command fr-btn" data-cmd="strikeThrough"><i class="fa fa-strikethrough"></i></button><button type="button" tabindex="-1" aria-label="Subíndice" title="Subíndice" class="fr-command fr-btn" data-cmd="subscript"><i class="fa fa-subscript"></i></button><button type="button" tabindex="-1" aria-label="Superíndice" title="Superíndice" class="fr-command fr-btn" data-cmd="superscript"><i class="fa fa-superscript"></i></button><button type="button" tabindex="-1" aria-label="Familia de fuentes" title="Familia de fuentes" class="fr-command fr-btn fr-dropdown fr-selection" data-cmd="fontFamily"><i class="fa fa-font"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command" data-cmd="fontFamily" data-param1="Arial,Helvetica,sans-serif" style="font-family: Arial,Helvetica,sans-serif" title="Arial">Arial</a></li><li><a class="fr-command" data-cmd="fontFamily" data-param1="Georgia,serif" style="font-family: Georgia,serif" title="Georgia">Georgia</a></li><li><a class="fr-command" data-cmd="fontFamily" data-param1="Impact,Charcoal,sans-serif" style="font-family: Impact,Charcoal,sans-serif" title="Impact">Impact</a></li><li><a class="fr-command" data-cmd="fontFamily" data-param1="Tahoma,Geneva,sans-serif" style="font-family: Tahoma,Geneva,sans-serif" title="Tahoma">Tahoma</a></li><li><a class="fr-command" data-cmd="fontFamily" data-param1="Times New Roman,Times,serif" style="font-family: Times New Roman,Times,serif" title="Times New Roman">Times New Roman</a></li><li><a class="fr-command" data-cmd="fontFamily" data-param1="Verdana,Geneva,sans-serif" style="font-family: Verdana,Geneva,sans-serif" title="Verdana">Verdana</a></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Tamaño de fuente" title="Tamaño de fuente" class="fr-command fr-btn fr-dropdown fr-selection" data-cmd="fontSize"><i class="fa fa-text-height"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command" data-cmd="fontSize" data-param1="8px" title="8">8</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="9px" title="9">9</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="10px" title="10">10</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="11px" title="11">11</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="12px" title="12">12</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="14px" title="14">14</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="18px" title="18">18</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="24px" title="24">24</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="30px" title="30">30</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="36px" title="36">36</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="48px" title="48">48</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="60px" title="60">60</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="72px" title="72">72</a></li><li><a class="fr-command" data-cmd="fontSize" data-param1="96px" title="96">96</a></li></ul></div></div></div><div class="fr-separator fr-vs"></div><button type="button" tabindex="-1" aria-label="Colores" title="Colores" class="fr-command fr-btn" data-cmd="color" data-popup="true"><i class="fa fa-tint"></i></button><button type="button" tabindex="-1" aria-label="Emoticones" title="Emoticones" class="fr-command fr-btn" data-cmd="emoticons" data-popup="true"><i class="fa fa-smile-o"></i></button><button type="button" tabindex="-1" aria-label="Estilo en línea" title="Estilo en línea" class="fr-command fr-btn fr-dropdown" data-cmd="inlineStyle"><i class="fa fa-paint-brush"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><span style="font-size: 20px; color: red;"><a class="fr-command" data-cmd="inlineStyle" data-param1="font-size: 20px; color: red;" title="Big Red">Big Red</a></span></li><li><span style="font-size: 14px; color: blue;"><a class="fr-command" data-cmd="inlineStyle" data-param1="font-size: 14px; color: blue;" title="Small Blue">Small Blue</a></span></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Estilo de párrafo" title="Estilo de párrafo" class="fr-command fr-btn fr-dropdown" data-cmd="paragraphStyle"><i class="fa fa-magic"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command fr-text-gray" data-cmd="paragraphStyle" data-param1="fr-text-gray" title="Gray">Gray</a></li><li><a class="fr-command fr-text-bordered" data-cmd="paragraphStyle" data-param1="fr-text-bordered" title="Bordered">Bordered</a></li><li><a class="fr-command fr-text-spaced" data-cmd="paragraphStyle" data-param1="fr-text-spaced" title="Spaced">Spaced</a></li><li><a class="fr-command fr-text-uppercase" data-cmd="paragraphStyle" data-param1="fr-text-uppercase" title="Uppercase">Uppercase</a></li></ul></div></div></div><div class="fr-separator fr-vs"></div><button type="button" tabindex="-1" aria-label="Formato de párrafo" title="Formato de párrafo" class="fr-command fr-btn fr-dropdown fr-selection" data-cmd="paragraphFormat"><i class="fa fa-paragraph"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><p style="padding: 0 !important; margin: 0 !important;"><a class="fr-command" data-cmd="paragraphFormat" data-param1="N" title="Normal">Normal</a></p></li><li><h1 style="padding: 0 !important; margin: 0 !important;"><a class="fr-command" data-cmd="paragraphFormat" data-param1="H1" title="Encabezado 1">Encabezado 1</a></h1></li><li><h2 style="padding: 0 !important; margin: 0 !important;"><a class="fr-command" data-cmd="paragraphFormat" data-param1="H2" title="Encabezado 2">Encabezado 2</a></h2></li><li><h3 style="padding: 0 !important; margin: 0 !important;"><a class="fr-command" data-cmd="paragraphFormat" data-param1="H3" title="Encabezado 3">Encabezado 3</a></h3></li><li><h4 style="padding: 0 !important; margin: 0 !important;"><a class="fr-command" data-cmd="paragraphFormat" data-param1="H4" title="Encabezado 4">Encabezado 4</a></h4></li><li><pre style="padding: 0 !important; margin: 0 !important;"><a class="fr-command" data-cmd="paragraphFormat" data-param1="PRE" title="Código">Código</a></pre></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Alinear" title="Alinear" class="fr-command fr-btn fr-dropdown" data-cmd="align"><i class="fa fa-align-center"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command fr-title" data-cmd="align" data-param1="left" title="Alinear a la izquierda"><i class="fa fa-align-left"></i></a></li><li><a class="fr-command fr-title" data-cmd="align" data-param1="center" title="Alinear al centro"><i class="fa fa-align-center"></i></a></li><li><a class="fr-command fr-title" data-cmd="align" data-param1="right" title="Alinear a la derecha"><i class="fa fa-align-right"></i></a></li><li><a class="fr-command fr-title" data-cmd="align" data-param1="justify" title="Justificar"><i class="fa fa-align-justify"></i></a></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Lista ordenada" title="Lista ordenada" class="fr-command fr-btn" data-cmd="formatOL"><i class="fa fa-list-ol"></i></button><button type="button" tabindex="-1" aria-label="Lista desordenada" title="Lista desordenada" class="fr-command fr-btn" data-cmd="formatUL"><i class="fa fa-list-ul"></i></button><button type="button" tabindex="-1" aria-label="Reducir sangría" title="Reducir sangría (Ctrl+[)" class="fr-command fr-btn" data-cmd="outdent"><i class="fa fa-outdent"></i></button><button type="button" tabindex="-1" aria-label="Aumentar sangría" title="Aumentar sangría (Ctrl+])" class="fr-command fr-btn" data-cmd="indent"><i class="fa fa-indent"></i></button><div class="fr-separator fr-hs"></div><button type="button" tabindex="-1" aria-label="Insertar enlace" class="fr-command fr-btn" data-cmd="insertLink" data-popup="true"><i class="fa fa-link"></i></button><button type="button" tabindex="-1" aria-label="Insertar imagen" title="Insertar imagen (Ctrl+P)" class="fr-command fr-btn" data-cmd="insertImage" data-popup="true"><i class="fa fa-image"></i></button><button type="button" tabindex="-1" aria-label="Insertar video" title="Insertar video" class="fr-command fr-btn" data-cmd="insertVideo" data-popup="true"><i class="fa fa-video-camera"></i></button><button type="button" tabindex="-1" aria-label="Insertar tabla" title="Insertar tabla" class="fr-command fr-btn" data-cmd="insertTable" data-popup="true"><i class="fa fa-table"></i></button><div class="fr-separator fr-vs"></div><button type="button" tabindex="-1" aria-label="Insertar línea horizontal" title="Insertar línea horizontal" class="fr-command fr-btn" data-cmd="insertHR"><i class="fa fa-minus"></i></button><button type="button" tabindex="-1" aria-label="Deshacer" title="Deshacer (Ctrl+Z)" class="fr-command fr-btn fr-disabled" data-cmd="undo"><i class="fa fa-rotate-left"></i></button><button type="button" tabindex="-1" aria-label="Rehacer" title="Rehacer (Ctrl+Shift+Z)" class="fr-command fr-btn fr-disabled" data-cmd="redo"><i class="fa fa-rotate-right"></i></button><button type="button" tabindex="-1" aria-label="Quitar el formato" title="Quitar el formato" class="fr-command fr-btn" data-cmd="clearFormatting"><i class="fa fa-eraser"></i></button><button type="button" tabindex="-1" aria-label="Seleccionar todo" title="Seleccionar todo" class="fr-command fr-btn" data-cmd="selectAll"><i class="fa fa-mouse-pointer"></i></button><button type="button" tabindex="-1" aria-label="Vista de código" title="Vista de código" class="fr-command fr-btn" data-cmd="html"><i class="fa fa-code"></i></button></div><div class="fr-popup fr-desktop fr-inline fr-ltr" style="left: 588.438px; top: 454px;"><span class="fr-arrow" style="margin-left: -5px;"></span><div class="fr-buttons"><button type="button" tabindex="-1" aria-label="Abrir enlace" title="Abrir enlace" class="fr-command fr-btn" data-cmd="linkOpen"><i class="fa fa-external-link"></i></button><button type="button" tabindex="-1" aria-label="Style" title="Style" class="fr-command fr-btn fr-dropdown" data-cmd="linkStyle"><i class="fa fa-magic"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command" data-cmd="linkStyle" data-param1="fr-green">Green</a></li><li><a class="fr-command" data-cmd="linkStyle" data-param1="fr-strong">Thick</a></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Editar enlace" title="Editar enlace" class="fr-command fr-btn" data-cmd="linkEdit"><i class="fa fa-edit"></i></button><button type="button" tabindex="-1" aria-label="Quitar enlace" title="Quitar enlace" class="fr-command fr-btn" data-cmd="linkRemove"><i class="fa fa-unlink"></i></button></div></div><div class="fr-image-overlay"></div><div class="fr-popup fr-desktop fr-inline fr-ltr" style="left: 588.5px; top: 1480px;"><span class="fr-arrow" style="margin-left: -5px;"></span><div class="fr-buttons"><button type="button" tabindex="-1" aria-label="Reemplazar" title="Reemplazar" class="fr-command fr-btn" data-cmd="imageReplace"><i class="fa fa-exchange"></i></button><button type="button" tabindex="-1" aria-label="Alinear" title="Alinear" class="fr-command fr-btn fr-dropdown" data-cmd="imageAlign"><i class="fa fa-align-justify"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command fr-title" data-cmd="imageAlign" data-param1="left" title="Alinear a la izquierda"><i class="fa fa-align-left"></i></a></li><li><a class="fr-command fr-title" data-cmd="imageAlign" data-param1="justify" title="Ninguno"><i class="fa fa-align-justify"></i></a></li><li><a class="fr-command fr-title" data-cmd="imageAlign" data-param1="right" title="Alinear a la derecha"><i class="fa fa-align-right"></i></a></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Quitar" title="Quitar" class="fr-command fr-btn" data-cmd="imageRemove"><i class="fa fa-trash"></i></button><div class="fr-separator fr-vs fr-hidden"></div><button type="button" tabindex="-1" aria-label="Insertar enlace" title="Insertar enlace" class="fr-command fr-btn" data-cmd="imageLink"><i class="fa fa-link"></i></button><button type="button" tabindex="-1" aria-label="Abrir enlace" title="Abrir enlace" class="fr-command fr-btn fr-hidden" data-cmd="linkOpen"><i class="fa fa-external-link"></i></button><button type="button" tabindex="-1" aria-label="Editar enlace" title="Editar enlace" class="fr-command fr-btn fr-hidden" data-cmd="linkEdit"><i class="fa fa-edit"></i></button><button type="button" tabindex="-1" aria-label="Quitar enlace" title="Quitar enlace" class="fr-command fr-btn fr-hidden" data-cmd="linkRemove"><i class="fa fa-unlink"></i></button><div class="fr-separator fr-hs"></div><button type="button" tabindex="-1" aria-label="Mostrar" title="Mostrar" class="fr-command fr-btn fr-dropdown" data-cmd="imageDisplay"><i class="fa fa-star"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command" data-cmd="imageDisplay" data-param1="inline" title="Inline">En línea</a></li><li><a class="fr-command" data-cmd="imageDisplay" data-param1="block" title="Break Text">Romper texto</a></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Style" title="Style" class="fr-command fr-btn fr-dropdown" data-cmd="imageStyle"><i class="fa fa-magic"></i></button><div class="fr-dropdown-menu"><div class="fr-dropdown-wrapper"><div class="fr-dropdown-content"><ul class="fr-dropdown-list"><li><a class="fr-command" data-cmd="imageStyle" data-param1="fr-rounded">Rounded</a></li><li><a class="fr-command" data-cmd="imageStyle" data-param1="fr-bordered">Bordered</a></li></ul></div></div></div><button type="button" tabindex="-1" aria-label="Texto alternativo" title="Texto alternativo" class="fr-command fr-btn" data-cmd="imageAlt"><i class="fa fa-info"></i></button><button type="button" tabindex="-1" aria-label="Cambiar tamaño" title="Cambiar tamaño" class="fr-command fr-btn" data-cmd="imageSize"><i class="fa fa-arrows-alt"></i></button></div></div><div class="fr-tooltip" style="left: -3000px; top: 8032px; position: fixed;">Insertar enlace (Ctrl+K)</div></body></html>

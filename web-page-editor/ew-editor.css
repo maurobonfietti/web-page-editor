@@ -1,0 +1,52 @@
+
+.ew-bars {
+    width: 40px;
+    height: 40px;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    position: fixed;
+    top: 50px;
+    left: 25px;
+    display: true;
+    text-align: center;
+    color: #fafafa;
+    font-size: 28px;
+    background: #576370;
+    z-index: 9999;
+    outline: none;
+}
+
+.ew-gear {
+    width: 40px;
+    height: 40px;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    position: fixed;
+    top: 100px;
+    left: 25px;
+    text-align: center;
+    color: #fafafa;
+    font-size: 28px;
+    background: #576370;
+    z-index: 9999;
+    outline: none;
+}
+
+.ew-save {
+    width: 40px;
+    height: 40px;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    position: fixed;
+    top: 150px;
+    left: 25px;
+    text-align: center;
+    color: #fafafa;
+    font-size: 28px;
+    background: #576370;
+    z-index: 9999;
+/*     outline: none; */
+}

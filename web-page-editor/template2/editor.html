@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<link rel="stylesheet" href="../ew-editor.css">
+
+	<link rel="stylesheet" href="../css/froala_editor.css">
+	<link rel="stylesheet" href="../css/froala_style.css">
+	<link rel="stylesheet" href="../css/plugins/code_view.css">
+	<link rel="stylesheet" href="../css/plugins/colors.css">
+	<link rel="stylesheet" href="../css/plugins/emoticons.css">
+	<link rel="stylesheet" href="../css/plugins/image_manager.css">
+	<link rel="stylesheet" href="../css/plugins/image.css">
+	<link rel="stylesheet" href="../css/plugins/line_breaker.css">
+	<link rel="stylesheet" href="../css/plugins/table.css">
+	<link rel="stylesheet" href="../css/plugins/char_counter.css">
+	<link rel="stylesheet" href="../css/plugins/video.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>EW</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendor/device-mockups/device-mockups.min.css">
+
+    <!-- Theme CSS -->
+    <link href="css/new-age.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+	<div>
+		<a href="#" class="ew-gear" title="Habilitar Edición"><i class="fa fa-edit"></i></a>
+		<a href="#" class="ew-save" title="Guardar Página"><i class="fa fa-save"></i></a>
+	</div>
+
+    <header id="header">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-sm-7">
+                    <div class="header-content">
+                        <div class="header-content-inner">
+                            <h1>New Age es una página de aterrizaje para aplicaciones móviles. ¡Le ayuda a presentar su aplicación web o cualquier otra cosa!</h1>
+                            <a href="#download" class="btn btn-outline btn-xl page-scroll">¡CONOCÉ MÁS!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+					<br><br><br>
+				</div>
+			</div>
+        </div>
+    </header>
+
+    <section id="download" class="download bg-primary text-center">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
+                    <p>Our app is available on any mobile device! Download now to get started!</p>
+                    <div class="badges">
+                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <div class="row editable">
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                        <h2>Unlimited Features, Unlimited Fun</h2>
+                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="row editable">
+                <div class="col-md-4">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-screen-smartphone text-primary"></i>
+                                    <h3>Device Mockups</h3>
+                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-camera text-primary"></i>
+                                    <h3>Flexible Use</h3>
+                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-present text-primary"></i>
+                                    <h3>Free to Use</h3>
+                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature-item">
+                                    <i class="icon-lock-open text-primary"></i>
+                                    <h3>Open Source</h3>
+                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+    </section>
+
+    <section id="cta" class="cta">
+        <div class="cta-content">
+            <div class="container editable">
+                <h2>Stop waiting.<br>Start building.</h2>
+                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+    </section>
+
+    <section id="contact" class="contact bg-primary">
+        <div class="container editable">
+            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+        </div>
+			<div class="row ew-tools text-left">
+				<div class="col-lg-12">
+					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+				</div>
+			</div>
+    </section>
+
+    <footer>
+        <div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p>Copyright &copy; 2016. Sitio creado con <a href="http://www.empireweb.com.ar" target="_blank">Empire Web.</a> Todos los derechos reservados.</p>
+				</div>
+			</div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/new-age.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+<script type="text/javascript" src="../js/froala_editor.min.js"></script>
+<script type="text/javascript" src="../js/plugins/align.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>
+<script type="text/javascript" src="../js/plugins/code_view.min.js"></script>
+<script type="text/javascript" src="../js/plugins/colors.min.js"></script>
+<script type="text/javascript" src="../js/plugins/draggable.min.js"></script>
+<script type="text/javascript" src="../js/plugins/emoticons.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_size.min.js"></script>
+<script type="text/javascript" src="../js/plugins/font_family.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image.min.js"></script>
+<script type="text/javascript" src="../js/plugins/image_manager.min.js"></script>
+<script type="text/javascript" src="../js/plugins/line_breaker.min.js"></script>
+<script type="text/javascript" src="../js/plugins/link.min.js"></script>
+<script type="text/javascript" src="../js/plugins/lists.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_format.min.js"></script>
+<script type="text/javascript" src="../js/plugins/paragraph_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/table.min.js"></script>
+<script type="text/javascript" src="../js/plugins/video.min.js"></script>
+<script type="text/javascript" src="../js/plugins/url.min.js"></script>
+<script type="text/javascript" src="../js/plugins/entities.min.js"></script>
+<script type="text/javascript" src="../js/plugins/char_counter.min.js"></script>
+<script type="text/javascript" src="../js/plugins/inline_style.min.js"></script>
+<script type="text/javascript" src="../js/plugins/save.min.js"></script>
+<script type="text/javascript" src="../js/languages/es.js"></script>
+
+<script src="../jscolor-2.0.4/jscolor.js"></script>
+
+<script type="text/javascript" src="../ew-editor.js"></script>
+
+<!-- <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-9443358-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+	var _mfq = _mfq || [];
+	(function() {
+		var mf = document.createElement("script");
+		mf.type = "text/javascript"; mf.async = true;
+		mf.src = "//cdn.mouseflow.com/projects/0793da80-9e7f-4e98-a7cf-09ca6e9e4511.js";
+		document.getElementsByTagName("head")[0].appendChild(mf);
+	})();
+</script>
+ -->
+</body>
+
+</html>

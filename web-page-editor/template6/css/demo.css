@@ -1,0 +1,149 @@
+body {
+	background: #F1F2F7;
+	color: #566473;
+	font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.wrap {
+	overflow: hidden;
+}
+
+
+.head {
+	background: white;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.demo-btn {
+	color: white;
+	background: orange;
+	margin-top: 25px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+
+}
+
+.demo-content .container {
+	padding:60px 0;
+}
+
+.demo-content .item {
+	margin:30px 30px 50px;
+	text-align: center;
+	
+	background: transparent;
+
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition:all .5s ease-in-out;
+	-o-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+}
+
+.demo-content .item:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.item .title {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 15px auto 20px;
+	text-transform: uppercase;
+}
+
+.title span {
+	font-family: "Pacifico", Arial;
+	font-weight: normal;
+	text-transform: none;
+	letter-spacing:1px;
+	font-size: 24px;
+	padding-right: 7px;
+}
+
+.item p {
+	margin: 20px 0;
+	font-weight: 400;
+}
+
+footer {
+	text-align: center;
+	background: #252C34;
+	padding: 15px 0;
+}
+
+.page-mask { 
+	width: 100%; 
+	height: 100%; 
+	position: fixed; 
+	background: #fff; 
+	top:0px; 
+	left: 0px; 
+	z-index: 99999;
+}
+
+.slide-mask {
+	height:32px;
+		left:50%;
+		margin:-8px 0 0 -8px;
+		position:absolute;
+		top:50%;
+		width:32px;
+		z-index:999;
+}
+
+.spinner {
+	background: url(../img/flat-loader.gif);
+  	width: 128px;
+  	height: 128px;
+  	position: absolute;
+  	left: 50%;
+  	margin: -64px 0 0 -64px;
+  	top: 50%;
+}
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    position: fixed;
+    bottom: 100px;
+    right: 15px;
+    display: none;
+    text-align: center;
+    color: #fafafa;
+    font-size: 28px;
+    background: #576370;
+    z-index: 9999;
+	outline: none;
+}
+
+.scrollup i {
+    line-height: 38px;
+}
+
+a.scrollup:hover i,a.scrollup:focus i {
+    text-decoration: none;
+    color: #fafafa;
+    outline: none;
+}
+
+@media(min-width: 481px) and (max-width: 767px) {
+	.demo-content .item a {
+		display: table;
+		margin: 0 auto;
+	}
+}
+
+@media(min-width: 768px) and (max-width: 979px) {
+	.demo-content .item a {
+		display: table;
+		margin: 0 auto;
+	}
+}

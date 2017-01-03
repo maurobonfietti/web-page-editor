@@ -13,8 +13,7 @@ function contentEditable() {
 		  toolbarVisibleWithoutSelection: true,
 		  toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'emoticons', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html'],
 		  pluginsEnabled: null,
-		  language: 'es',
-		  key: '0qxfB-21jB-13mE-11B-9C2A-7pmC5cq==',
+		  language: 'es'
 		})
 	});
 }

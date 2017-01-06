@@ -1,490 +1,489 @@
 <!doctype html>
 <html>
-<head>
+    <head>
 
-	<link rel="stylesheet" href="../ew-editor.css">
+        <link rel="stylesheet" href="../ew-editor.css">
 
-	<link rel="stylesheet" href="../css/froala_editor.css">
-	<link rel="stylesheet" href="../css/froala_style.css">
-	<link rel="stylesheet" href="../css/plugins/code_view.css">
-	<link rel="stylesheet" href="../css/plugins/colors.css">
-	<link rel="stylesheet" href="../css/plugins/emoticons.css">
-	<link rel="stylesheet" href="../css/plugins/image_manager.css">
-	<link rel="stylesheet" href="../css/plugins/image.css">
-	<link rel="stylesheet" href="../css/plugins/line_breaker.css">
-	<link rel="stylesheet" href="../css/plugins/table.css">
-	<link rel="stylesheet" href="../css/plugins/char_counter.css">
-	<link rel="stylesheet" href="../css/plugins/video.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
+        <link rel="stylesheet" href="../css/froala_editor.css">
+        <link rel="stylesheet" href="../css/froala_style.css">
+        <link rel="stylesheet" href="../css/plugins/code_view.css">
+        <link rel="stylesheet" href="../css/plugins/colors.css">
+        <link rel="stylesheet" href="../css/plugins/emoticons.css">
+        <link rel="stylesheet" href="../css/plugins/image_manager.css">
+        <link rel="stylesheet" href="../css/plugins/image.css">
+        <link rel="stylesheet" href="../css/plugins/line_breaker.css">
+        <link rel="stylesheet" href="../css/plugins/table.css">
+        <link rel="stylesheet" href="../css/plugins/char_counter.css">
+        <link rel="stylesheet" href="../css/plugins/video.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>Homepage</title>
-<link rel="icon" href="favicon.png" type="image/png">
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<link href="css/style.css" rel="stylesheet" type="text/css">
-<link href="css/linecons.css" rel="stylesheet" type="text/css">
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-<link href="css/responsive.css" rel="stylesheet" type="text/css">
-<link href="css/animate.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, maximum-scale=1">
+        <title>Homepage</title>
+        <link rel="icon" href="favicon.png" type="image/png">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/linecons.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="css/responsive.css" rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
 
-<link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
 
-<!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+        <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
 
-<script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/classie.js"></script>
+        <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script>
+        <script type="text/javascript" src="js/classie.js"></script>
 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
+        <!--[if lt IE 9]>
+            <script src="js/respond-1.1.0.min.js"></script>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/html5element.js"></script>
+        <![endif]-->
 
-<script type="text/javascript">
-	$(document).ready(function(e) {
-        $('.res-nav_click').click(function(){
-		$('ul.toggle').slideToggle(600)	
-			});	
-			
-	$(document).ready(function() {
-$(window).bind('scroll', function() {
-         if ($(window).scrollTop() > 0) {
-             $('#header_outer').addClass('fixed');
-         }
-         else {
-             $('#header_outer').removeClass('fixed');
-         }
-    });
-	
-	  });
-	  
+        <script type="text/javascript">
+            $(document).ready(function (e) {
+                $('.res-nav_click').click(function () {
+                    $('ul.toggle').slideToggle(600)
+                });
 
-		    });	
-function resizeText() {
-	var preferredWidth = 767;
-	var displayWidth = window.innerWidth;
-	var percentage = displayWidth / preferredWidth;
-	var fontsizetitle = 25;
-	var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-	$(".divclass").css("font-size", newFontSizeTitle)
-}
-</script>
-</head>
-<body>
+                $(document).ready(function () {
+                    $(window).bind('scroll', function () {
+                        if ($(window).scrollTop() > 0) {
+                            $('#header_outer').addClass('fixed');
+                        } else {
+                            $('#header_outer').removeClass('fixed');
+                        }
+                    });
 
-<div>
-	<a href="#" class="ew-gear" title="Habilitar Edición"><i class="fa fa-edit"></i></a>
-	<a href="#" class="ew-save" title="Guardar Página"><i class="fa fa-save"></i></a>
-</div>
+                });
 
-<!--Top_content-->
-<section id="top_content" class="top_cont_outer">
-  <div class="top_cont_inner">
-    <div class="container">
-      <div class="top_content">
-        <div class="row editable">
-          <div class="col-lg-5 col-sm-7">
-            <div class="top_left_cont flipInY wow animated">
-              <h3>Colorido &amp; sexy!</h3>
-              <h2>TE PRESENTAMOS<br>BUTTERFLY</h2>
-              <p> Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum. </p>
-              <a href="#service" class="learn_more2">DESCUBRIR</a> </div>
-          </div>
-          <div class="col-lg-7 col-sm-5"> </div>
+
+            });
+            function resizeText() {
+                var preferredWidth = 767;
+                var displayWidth = window.innerWidth;
+                var percentage = displayWidth / preferredWidth;
+                var fontsizetitle = 25;
+                var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+                $(".divclass").css("font-size", newFontSizeTitle)
+            }
+        </script>
+    </head>
+    <body>
+
+        <div>
+            <a href="#" class="ew-gear" title="Habilitar Edición"><i class="fa fa-edit"></i></a>
+            <a href="#" class="ew-save" title="Guardar Página"><i class="fa fa-save"></i></a>
         </div>
-			<div class="row ew-tools text-left">
-				<div class="col-lg-12">
-					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
-					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
-					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
-					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
-					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
-				</div>
-			</div>
-      </div>
-    </div>
-  </div>
-</section>
-<!--Top_content--> 
 
-<!--Service-->
-<section  id="service">
-  <div class="container">
-    <div class="service_area">
-      <div class="row editable">
-		<h2>Services</h2><br>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">Quick TurnAround</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">Friendly Support</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">top Security</h3>
-            <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
-          </div>
-        </div>
-      </div>
-			<div class="row ew-tools text-left">
-				<div class="col-lg-12">
-					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
-					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
-					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
-					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
-					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
-				</div>
-			</div>
-    </div>
-  </div>
-</section>
-<!--Service-->
-
-<section id="work_outer"><!--main-section-start-->
-<div class="top_cont_latest">
-  <div class="container">
-    <div class="work_section">
-      <div class="row editable">
-		<h2>Latest Work</h2><br>
-        <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-doc"></i> </div>
-            <div class="service-list-col2">
-              <h3>Process Walkthrough</h3>
-              <p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+        <!--Top_content-->
+        <section id="top_content" class="top_cont_outer">
+            <div class="top_cont_inner">
+                <div class="container">
+                    <div class="top_content">
+                        <div class="row editable">
+                            <div class="col-lg-5 col-sm-7">
+                                <div class="top_left_cont flipInY wow animated">
+                                    <h3>Colorido &amp; sexy!</h3>
+                                    <h2>TE PRESENTAMOS<br>BUTTERFLY</h2>
+                                    <p> Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum. </p>
+                                    <a href="#service" class="learn_more2">DESCUBRIR</a> </div>
+                            </div>
+                            <div class="col-lg-7 col-sm-5"> </div>
+                        </div>
+                        <div class="row ew-tools text-left">
+                            <div class="col-lg-12">
+                                <button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+                                <button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+                                <input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+                                <button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+                                <button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-comment"></i> </div>
-            <div class="service-list-col2">
-              <h3>24/7 support</h3>
-              <p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
+        </section>
+        <!--Top_content--> 
+
+        <!--Service-->
+        <section  id="service">
+            <div class="container">
+                <div class="service_area">
+                    <div class="row editable">
+                        <h2>Services</h2><br>
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Quick TurnAround</h3>
+                                <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Friendly Support</h3>
+                                <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">top Security</h3>
+                                <p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit  aenean rhoncus posuere odio in tincidunt.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ew-tools text-left">
+                        <div class="col-lg-12">
+                            <button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+                            <button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+                            <input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+                            <button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+                            <button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-database"></i> </div>
-            <div class="service-list-col2">
-              <h3>Hosting & Storage</h3>
-              <p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>
+        </section>
+        <!--Service-->
+
+        <section id="work_outer"><!--main-section-start-->
+            <div class="top_cont_latest">
+                <div class="container">
+                    <div class="work_section">
+                        <div class="row editable">
+                            <h2>Latest Work</h2><br>
+                            <div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
+                                <div class="service-list">
+                                    <div class="service-list-col1"> <i class="icon-doc"></i> </div>
+                                    <div class="service-list-col2">
+                                        <h3>Process Walkthrough</h3>
+                                        <p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+                                    </div>
+                                </div>
+                                <div class="service-list">
+                                    <div class="service-list-col1"> <i class="icon-comment"></i> </div>
+                                    <div class="service-list-col2">
+                                        <h3>24/7 support</h3>
+                                        <p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
+                                    </div>
+                                </div>
+                                <div class="service-list">
+                                    <div class="service-list-col1"> <i class="icon-database"></i> </div>
+                                    <div class="service-list-col2">
+                                        <h3>Hosting & Storage</h3>
+                                        <p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>
+                                    </div>
+                                </div>
+                                <div class="service-list">
+                                    <div class="service-list-col1"> <i class="icon-cog"></i> </div>
+                                    <div class="service-list-col2">
+                                        <h3>Customization options</h3>
+                                        <p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
+                                    </div>
+                                </div>
+                                <div class="work_bottom"> <span>Ready to take the plunge?</span> <a href="#contact" class="contact_btn">Contact Us</a> </div>
+                            </div>
+                            <figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
+                        </div>
+                        <div class="row ew-tools text-left">
+                            <div class="col-lg-12">
+                                <button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+                                <button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+                                <input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+                                <button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+                                <button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
             </div>
-          </div>
-          <div class="service-list">
-            <div class="service-list-col1"> <i class="icon-cog"></i> </div>
-            <div class="service-list-col2">
-              <h3>Customization options</h3>
-              <p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
+        </section>
+        <!--main-section-end--> 
+
+        <section class="main-section" id="client_outer"><!--main-section client-part-start-->
+            <div class="client_area editable">
+                <h2>Happy Clients</h2><br>
+                <div class="client_section animated  fadeInUp wow">
+                    <div class="client_profile">
+                        <div class=""><img src="img/client-pic1.jpg" alt=""></div>
+                        <h3>Saul Goodman</h3>
+                        <span>Lawless Inc</span> </div>
+                    <div class="quote_section">
+                        <div class="quote_arrow"></div>
+                        <p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small> </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="client_section animated  fadeInDown wow">
+                    <div class="client_profile flt">
+                        <div class=""><img src="img/client-pic2.jpg" alt=""></div>
+                        <h3>Marie Schrader</h3>
+                        <span>DEA Foundation</span> </div>
+                    <div class="quote_section flt">
+                        <div class="quote_arrow2"></div>
+                        <p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small> </p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
             </div>
-          </div>
-          <div class="work_bottom"> <span>Ready to take the plunge?</span> <a href="#contact" class="contact_btn">Contact Us</a> </div>
-        </div>
-        <figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
-      </div>
-			<div class="row ew-tools text-left">
-				<div class="col-lg-12">
-					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
-					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
-					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
-					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
-					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
-				</div>
-			</div>
-    </div>
-  </div>
-  <!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
-  </div>
-</section>
-<!--main-section-end--> 
+            <div class="row ew-tools text-left">
+                <div class="col-lg-12">
+                    <button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+                    <button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+                    <input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+                    <button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+                    <button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+                </div>
+            </div>
+        </section>
+        <!--main-section client-part-end-->
 
-<section class="main-section" id="client_outer"><!--main-section client-part-start-->
-  <div class="client_area editable">
-	<h2>Happy Clients</h2><br>
-    <div class="client_section animated  fadeInUp wow">
-      <div class="client_profile">
-        <div class=""><img src="img/client-pic1.jpg" alt=""></div>
-        <h3>Saul Goodman</h3>
-        <span>Lawless Inc</span> </div>
-      <div class="quote_section">
-        <div class="quote_arrow"></div>
-        <p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small> </p>
-      </div>
-      <div class="clear"></div>
-    </div>
-    <div class="client_section animated  fadeInDown wow">
-      <div class="client_profile flt">
-        <div class=""><img src="img/client-pic2.jpg" alt=""></div>
-        <h3>Marie Schrader</h3>
-        <span>DEA Foundation</span> </div>
-      <div class="quote_section flt">
-        <div class="quote_arrow2"></div>
-        <p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small> </p>
-      </div>
-      <div class="clear"></div>
-    </div>
-  </div>
-			<div class="row ew-tools text-left">
-				<div class="col-lg-12">
-					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
-					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
-					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
-					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
-					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
-				</div>
-			</div>
-</section>
-<!--main-section client-part-end-->
+        <!--c-logo-part-end-->
+        <section class="main-section team" id="team"><!--main-section team-start-->
+            <div class="container editable">
+                <h2>Amazing Team</h2>
+                <h6>Take a closer look into our amazing team. We won’t bite.</h6>
+                <div class="team-leader-block clearfix">
+                    <div class="team-leader-box">
+                        <div class="wow fadeInDown delay-03s">
+                            <div class=""></div>
+                            <img src="img/team-leader-pic1.jpg" alt="">
+                        </div>
+                        <h3 class="wow fadeInDown delay-03s">Walter White</h3>
+                        <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
+                        <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+                    </div>
+                    <div class="team-leader-box">
+                        <div class="wow fadeInDown delay-06s">
+                            <div class=""></div>
+                            <img src="img/team-leader-pic2.jpg" alt="">
+                        </div>
+                        <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
+                        <span class="wow fadeInDown delay-06s">Product Manager</span>
+                        <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+                    </div>
+                    <div class="team-leader-box">
+                        <div class="wow fadeInDown delay-09s">
+                            <div class=""></div>
+                            <img src="img/team-leader-pic3.jpg" alt="">
+                        </div>
+                        <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
+                        <span class="wow fadeInDown delay-09s">Accountant</span>
+                        <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row ew-tools text-left">
+                <div class="col-lg-12">
+                    <button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+                    <button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+                    <input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+                    <button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+                    <button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+                </div>
+            </div>
+        </section>
+        <!--main-section team-end-->
 
-<!--c-logo-part-end-->
-<section class="main-section team" id="team"><!--main-section team-start-->
-  <div class="container editable">
-    <h2>Amazing Team</h2>
-    <h6>Take a closer look into our amazing team. We won’t bite.</h6>
-    <div class="team-leader-block clearfix">
-      <div class="team-leader-box">
-        <div class="wow fadeInDown delay-03s">
-          <div class=""></div>
-          <img src="img/team-leader-pic1.jpg" alt="">
-        </div>
-        <h3 class="wow fadeInDown delay-03s">Walter White</h3>
-        <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-        <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-      </div>
-      <div class="team-leader-box">
-        <div class="wow fadeInDown delay-06s">
-          <div class=""></div>
-          <img src="img/team-leader-pic2.jpg" alt="">
-        </div>
-        <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-        <span class="wow fadeInDown delay-06s">Product Manager</span>
-        <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-      </div>
-      <div class="team-leader-box">
-        <div class="wow fadeInDown delay-09s">
-          <div class=""></div>
-          <img src="img/team-leader-pic3.jpg" alt="">
-        </div>
-        <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-        <span class="wow fadeInDown delay-09s">Accountant</span>
-        <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-      </div>
-    </div>
-  </div>
-			<div class="row ew-tools text-left">
-				<div class="col-lg-12">
-					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
-					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
-					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
-					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
-					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
-				</div>
-			</div>
-</section>
-<!--main-section team-end-->
+        <section id="follow" class="twitter-feed"><!--twitter-feed-->
+            <div class="container  animated fadeInDown delay-07s wow editable">
+                <div>FOLLOW US</div>
+                <p> When you're the underdog, your only option is to make #waves if you want to succeed. How much <br>
+                    and how often should you be drinking coffee?</p>
+                <span>About 28 mins ago</span> </div>
+            <div class="row ew-tools text-left">
+                <div class="col-lg-12">
+                    <button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+                    <button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+                    <input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+                    <button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+                    <button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+                </div>
+            </div>
+        </section>
+        <!--twitter-feed-end-->
 
-<section id="follow" class="twitter-feed"><!--twitter-feed-->
-  <div class="container  animated fadeInDown delay-07s wow editable">
-    <div>FOLLOW US</div>
-    <p> When you're the underdog, your only option is to make #waves if you want to succeed. How much <br>
-      and how often should you be drinking coffee?</p>
-    <span>About 28 mins ago</span> </div>
-			<div class="row ew-tools text-left">
-				<div class="col-lg-12">
-					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
-					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
-					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
-					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
-					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
-				</div>
-			</div>
-</section>
-<!--twitter-feed-end-->
+        <footer class="footer_section" id="contact">
+            <div class="container">
+                <section class="main-section contact" id="contact">
+                    <div class="contact_section editable">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="row editable">
+                        <div class="col-lg-12 wow fadeInLeft">
+                            <div class="contact-info-box address clearfix">
+                                <h3>Don’t be shy. Say hello!</h3>
+                                <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
+                                <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquampor id.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ew-tools text-left">
+                        <div class="col-lg-12">
+                            <button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
+                            <button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
+                            <input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
+                            <button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
+                            <button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
 
-<footer class="footer_section" id="contact">
-  <div class="container">
-    <section class="main-section contact" id="contact">
-      <div class="contact_section editable">
-        <h2>Contact Us</h2>
-      </div>
-      <div class="row editable">
-        <div class="col-lg-12 wow fadeInLeft">
-          <div class="contact-info-box address clearfix">
-            <h3>Don’t be shy. Say hello!</h3>
-            <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper.</p>
-            <p>Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquampor id.</p>
-          </div>
-        </div>
-      </div>
-			<div class="row ew-tools text-left">
-				<div class="col-lg-12">
-					<button onclick="down(this)" style="color:black;" title="Bajar Sección"><i class="fa fa-fw fa-arrow-down"></i></button>
-					<button onclick="up(this)" style="color:black;" title="Subir Sección"><i class="fa fa-fw fa-arrow-up"></i></button>
-					<input type="button" onchange="color(this, this.jscolor)" class="jscolor" value="..." ></input>
-					<button onclick="duplicate(this)" style="color:black;" title="Duplicar Sección"><i class="fa fa-fw fa-copy"></i></button>
-					<button onclick="remove(this)" style="color:black;" title="Eliminar Sección"><i class="fa fa-fw fa-trash-o"></i></button>
-				</div>
-			</div>
-    </section>
-  </div>
-</footer>
+        <footer class="footer_section" id="footer">
+            <div class="container">
+                <div class="footer_bottom">
+                    <span>Copyright &copy; 2017. Sitio creado con <a href="http://www.empireweb.com.ar" target="_blank">Empire Web.</a> Todos los derechos reservados.</span>
+                </div>
+            </div>
+        </footer>
 
-<footer class="footer_section" id="footer">
-  <div class="container">
-    <div class="footer_bottom">
-		<span>Copyright &copy; 2016. Sitio creado con <a href="http://www.empireweb.com.ar" target="_blank">Empire Web.</a> Todos los derechos reservados.</span>
-	</div>
-  </div>
-</footer>
+        <script type="text/javascript">
+            $(document).ready(function (e) {
+                $('#header_outer').scrollToFixed();
+                $('.res-nav_click').click(function () {
+                    $('.main-nav').slideToggle();
+                    return false;
+                });
+            });
+        </script> 
 
-<script type="text/javascript">
-    $(document).ready(function(e) {
-        $('#header_outer').scrollToFixed();
-        $('.res-nav_click').click(function(){
-            $('.main-nav').slideToggle();
-            return false;
-        });
-    });
-</script> 
+        <script type="text/javascript">
+            $(window).load(function () {
 
-<script type="text/javascript">
-	$(window).load(function(){
-		
-		$('a').bind('click',function(event){
-			var $anchor = $(this);
-			
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top - 91
-			}, 1500,'easeInOutExpo');
-			/*
-			if you don't want to use the easing effects:
-			$('html, body').stop().animate({
-				scrollTop: $($anchor.attr('href')).offset().top
-			}, 1000);
-			*/
-			event.preventDefault();
-		});
-	})
-</script> 
+                $('a').bind('click', function (event) {
+                    var $anchor = $(this);
 
-<script type="text/javascript">
+                    $('html, body').stop().animate({
+                        scrollTop: $($anchor.attr('href')).offset().top - 91
+                    }, 1500, 'easeInOutExpo');
+                    /*
+                     if you don't want to use the easing effects:
+                     $('html, body').stop().animate({
+                     scrollTop: $($anchor.attr('href')).offset().top
+                     }, 1000);
+                     */
+                    event.preventDefault();
+                });
+            })
+        </script> 
 
-   
-  jQuery(document).ready(function($){     
-// Portfolio Isotope
-	var container = $('#portfolio-wrap');	
-	
+        <script type="text/javascript">
 
-	container.isotope({
-		animationEngine : 'best-available',
-	  	animationOptions: {
-	     	duration: 200,
-	     	queue: false
-	   	},
-		layoutMode: 'fitRows'
-	});	
 
-	$('#filters a').click(function(){
-		$('#filters a').removeClass('active');
-		$(this).addClass('active');
-		var selector = $(this).attr('data-filter');
-	  	container.isotope({ filter: selector });
-        setProjects();		
-	  	return false;
-	});
-		
-		
-		function splitColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = 1;
-			
-			
-			if (winWidth > 1024) {
-				columnNumb = 4;
-			} else if (winWidth > 900) {
-				columnNumb = 2;
-			} else if (winWidth > 479) {
-				columnNumb = 2;
-			} else if (winWidth < 479) {
-				columnNumb = 1;
-			}
-			
-			return columnNumb;
-		}		
-		
-		function setColumns() { 
-			var winWidth = $(window).width(), 
-				columnNumb = splitColumns(), 
-				postWidth = Math.floor(winWidth / columnNumb);
-			
-			container.find('.portfolio-item').each(function () { 
-				$(this).css( { 
-					width : postWidth + 'px' 
-				});
-			});
-		}		
-		
-		function setProjects() { 
-			setColumns();
-			container.isotope('reLayout');
-		}		
-		
-		container.imagesLoaded(function () { 
-			setColumns();
-		});
-		
-	
-		$(window).bind('resize', function () { 
-			setProjects();			
-		});
+            jQuery(document).ready(function ($) {
+        // Portfolio Isotope
+                var container = $('#portfolio-wrap');
 
-});
-$( window ).load(function() {
-	jQuery('#all').click();
-	return false;
-});
-</script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
-<script type="text/javascript" src="../js/froala_editor.min.js"></script>
-<script type="text/javascript" src="../js/plugins/align.min.js"></script>
-<script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>
-<script type="text/javascript" src="../js/plugins/code_view.min.js"></script>
-<script type="text/javascript" src="../js/plugins/colors.min.js"></script>
-<script type="text/javascript" src="../js/plugins/draggable.min.js"></script>
-<script type="text/javascript" src="../js/plugins/emoticons.min.js"></script>
-<script type="text/javascript" src="../js/plugins/font_size.min.js"></script>
-<script type="text/javascript" src="../js/plugins/font_family.min.js"></script>
-<script type="text/javascript" src="../js/plugins/image.min.js"></script>
-<script type="text/javascript" src="../js/plugins/image_manager.min.js"></script>
-<script type="text/javascript" src="../js/plugins/line_breaker.min.js"></script>
-<script type="text/javascript" src="../js/plugins/link.min.js"></script>
-<script type="text/javascript" src="../js/plugins/lists.min.js"></script>
-<script type="text/javascript" src="../js/plugins/paragraph_format.min.js"></script>
-<script type="text/javascript" src="../js/plugins/paragraph_style.min.js"></script>
-<script type="text/javascript" src="../js/plugins/table.min.js"></script>
-<script type="text/javascript" src="../js/plugins/video.min.js"></script>
-<script type="text/javascript" src="../js/plugins/url.min.js"></script>
-<script type="text/javascript" src="../js/plugins/entities.min.js"></script>
-<script type="text/javascript" src="../js/plugins/char_counter.min.js"></script>
-<script type="text/javascript" src="../js/plugins/inline_style.min.js"></script>
-<script type="text/javascript" src="../js/plugins/save.min.js"></script>
-<script type="text/javascript" src="../js/languages/es.js"></script>
+                container.isotope({
+                    animationEngine: 'best-available',
+                    animationOptions: {
+                        duration: 200,
+                        queue: false
+                    },
+                    layoutMode: 'fitRows'
+                });
 
-<script src="../jscolor-2.0.4/jscolor.js"></script>
+                $('#filters a').click(function () {
+                    $('#filters a').removeClass('active');
+                    $(this).addClass('active');
+                    var selector = $(this).attr('data-filter');
+                    container.isotope({filter: selector});
+                    setProjects();
+                    return false;
+                });
 
-<script type="text/javascript" src="../ew-editor.js"></script>
 
-</body>
+                function splitColumns() {
+                    var winWidth = $(window).width(),
+                            columnNumb = 1;
+
+
+                    if (winWidth > 1024) {
+                        columnNumb = 4;
+                    } else if (winWidth > 900) {
+                        columnNumb = 2;
+                    } else if (winWidth > 479) {
+                        columnNumb = 2;
+                    } else if (winWidth < 479) {
+                        columnNumb = 1;
+                    }
+
+                    return columnNumb;
+                }
+
+                function setColumns() {
+                    var winWidth = $(window).width(),
+                            columnNumb = splitColumns(),
+                            postWidth = Math.floor(winWidth / columnNumb);
+
+                    container.find('.portfolio-item').each(function () {
+                        $(this).css({
+                            width: postWidth + 'px'
+                        });
+                    });
+                }
+
+                function setProjects() {
+                    setColumns();
+                    container.isotope('reLayout');
+                }
+
+                container.imagesLoaded(function () {
+                    setColumns();
+                });
+
+
+                $(window).bind('resize', function () {
+                    setProjects();
+                });
+
+            });
+            $(window).load(function () {
+                jQuery('#all').click();
+                return false;
+            });
+        </script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+        <script type="text/javascript" src="../js/froala_editor.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/align.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/code_beautifier.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/code_view.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/colors.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/draggable.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/emoticons.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/font_size.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/font_family.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/image.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/image_manager.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/line_breaker.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/link.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/lists.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/paragraph_format.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/paragraph_style.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/table.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/video.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/url.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/entities.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/char_counter.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/inline_style.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/save.min.js"></script>
+        <script type="text/javascript" src="../js/languages/es.js"></script>
+
+        <script src="../jscolor-2.0.4/jscolor.js"></script>
+
+        <script type="text/javascript" src="../ew-editor.js"></script>
+
+    </body>
 </html>

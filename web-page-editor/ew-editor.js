@@ -1,27 +1,23 @@
 
 var count = 0;
 
-var cutElement;
-
 contentEditable();
 
 function contentEditable() {
-    $(function () {
-        $('.editable').froalaEditor({
-            toolbarInline: true,
-            charCounterCount: false,
-            toolbarVisibleWithoutSelection: true,
-            toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'emoticons', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html'],
-            pluginsEnabled: null,
-            language: 'es'
-        })
+    $('.editable').froalaEditor({
+        toolbarInline: true,
+        charCounterCount: false,
+        toolbarVisibleWithoutSelection: true,
+        toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', '|', 'color', 'emoticons', 'inlineStyle', 'paragraphStyle', '|', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', '-', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', '|', 'quote', 'insertHR', 'undo', 'redo', 'clearFormatting', 'selectAll', 'html'],
+        pluginsEnabled: null,
+        language: 'es'
     });
 }
 
 function color(elementId, jscolor) {
     sectionId = getSectionId(elementId);
-    document.getElementById(sectionId).style.backgroundColor = '#' + jscolor;
-    document.getElementById(sectionId).style.backgroundImage = "none";
+    $('#' + sectionId).css('backgroundColor', '#' + jscolor);
+    $('#' + sectionId).css('backgroundImage', "none");
 }
 
 function getSectionId(elementId) {
@@ -52,12 +48,6 @@ function up(elementId) {
     $('#' + b.id).before($('#' + sectionId));
 }
 
-function cut(elementId) {
-    sectionId = getSectionId(elementId);
-    cutElement = document.getElementById(sectionId);
-    $('#' + sectionId).remove();
-}
-
 function duplicate(elementId) {
     count = count + 1;
     sectionId = getSectionId(elementId);
@@ -65,16 +55,6 @@ function duplicate(elementId) {
     var sectionRowClone = sectionRow.cloneNode(true);
     sectionRowClone.id = sectionId + count;
     sectionRow.parentNode.insertBefore(sectionRowClone, sectionRow.nextSibling);
-    contentEditable();
-    jscolor.installByClassName("jscolor");
-}
-
-function paste(elementId) {
-    count = count + 1;
-    sectionId = getSectionId(elementId);
-    var sectionRowClone = cutElement.cloneNode(true);
-    sectionRowClone.id = sectionId + count;
-    document.getElementById(sectionId).parentNode.insertBefore(sectionRowClone, document.getElementById(sectionId).nextSibling);
     contentEditable();
     jscolor.installByClassName("jscolor");
 }
@@ -111,22 +91,12 @@ function save() {
     $('.ew-save').show();
 }
 
-function configure() {
-    $('.ew-tools').toggle("slow");
-}
-
 $('.ew-tools').css('visibility', 'hidden');
 
 $('.ew-save').hide();
 
-$('.ew-bars').click(function () {
-    $('.ew-gear').toggle(400);
-    $('.ew-save').toggle(400);
-    return false;
-});
-
 $('.ew-gear').click(function () {
-    if ($('.ew-tools').css('visibility') == 'hidden') {
+    if ($('.ew-tools').css('visibility') === 'hidden') {
         $('.ew-tools').css('visibility', 'visible').hide().fadeIn("fast");
     } else {
         $('.ew-tools').fadeOut("fast", function () {

@@ -68,7 +68,6 @@ function remove(elementId) {
 
 function save() {
     $('.ew-tools').hide();
-    $('.ew-bars').hide();
     $('.ew-gear').hide();
     $('.ew-save').hide();
     var data = new FormData();
@@ -86,14 +85,13 @@ function save() {
     }, 3000);
     window.open('web-' + filename + '.html', '_blank');
     $('.ew-tools').show();
-    $('.ew-bars').show();
     $('.ew-gear').show();
     $('.ew-save').show();
 }
 
-$('.ew-tools').css('visibility', 'hidden');
-
 $('.ew-save').hide();
+
+$('.ew-tools').css('visibility', 'hidden');
 
 $('.ew-gear').click(function () {
     if ($('.ew-tools').css('visibility') === 'hidden') {

@@ -2,4 +2,3 @@
 
 header("location:templates");
 
-?>

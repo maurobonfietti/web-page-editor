@@ -14,7 +14,7 @@ if (!empty($_POST['data'])) {
     fwrite($file, $data);
     fclose($file);
 }
-
+/*
 if (!empty($_POST['data2'])) {
     $data2 = $_POST['data2'];
     $data2 = '<!DOCTYPE html>'.$data2;
@@ -27,3 +27,4 @@ if (!empty($_POST['data2'])) {
     fwrite($file, $data2);
     fclose($file);
 }
+*/

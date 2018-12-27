@@ -9,8 +9,8 @@ if (!empty($_POST['data'])) {
     end($templateUrl);
     $template = prev($templateUrl);
     $filename = $_POST['filename'];
-    $fname = $template.'/web-'.$filename.'.html';
-    $file = fopen(''.$fname, 'w');
+    $name = $template . '/web-' . $filename . '.html';
+    $file = fopen('' . $name, 'w');
     fwrite($file, $data);
     fclose($file);
 }

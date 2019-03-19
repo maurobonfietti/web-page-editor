@@ -1,4 +1,7 @@
-# web-page-editor
-Editor de sitios web increíblemente rápido y fácil de usar.
+# Web Page Editor
 
-Ver demo online: http://bit.ly/2uUn3nQ
+Website editor incredibly fast and easy to use.
+
+## Check it out:
+
+[Try live demo](http://bit.ly/2uUn3nQ)

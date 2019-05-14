@@ -5,7 +5,7 @@ Website editor incredibly fast and easy to use.
 ## GIFs
 
 ### Change text:
-![Change Text](docs/capture-1.gif)
+![Change Text](docs/1.gif)
 
 ### Change background color:
 ![Change Color](docs/capture-2.gif)

@@ -12,7 +12,3 @@ Website editor incredibly fast and easy to use.
 
 ### Change image:
 ![Change Image](docs/capture-3.gif)
-
-## Check it out:
-
-[Try live demo](http://bit.ly/2uUn3nQ)
